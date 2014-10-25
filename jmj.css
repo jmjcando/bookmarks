@@ -1,0 +1,98 @@
+body {
+    font-size: 14.0pt;
+    font-family: "Calibri", "Cambria", "Verdana", "sans-serif";
+}
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    /*width:10em;*/
+    border: solid 1px gainsboro;
+    background-color: lightyellow;
+    color: darkred;
+    word-wrap: break-word;
+}
+
+#menu:hover {
+    height: 90%;
+}
+
+#menu-header {
+    text-align: center;
+    font-size: 12pt;
+    font-weight:bold;
+    color: lightyellow;
+    background-color: darkred;
+    padding: .5em;
+    margin: 0;
+}
+
+
+#menu a {
+    color: darkred;
+    /*font-family: Arial;*/
+    /*font-style: italic;*/
+    font-size: 12pt;
+    font-weight: bold;
+    word-wrap:normal;
+}
+
+#menu:hover ul {
+    display: block;
+    margin: 0;
+    overflow: auto;
+    height: 95%;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0.25em;
+    display: none;
+    margin-top: 0;
+}
+
+#menu li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.folder {
+    padding-left: 1em;
+    float: left;
+    max-width:20%;
+    /*width:15em;*/
+}
+
+.folder-header {
+    font-weight: bold;
+    padding: 0.25em;
+    background-color: darkcyan;
+    color: white;
+}
+
+ul.folder-body {
+    padding-left: 1em;
+    margin-top: 0;
+    /*list-style-type: none;*/
+    /*height:15em;
+            overflow:auto;*/
+}
+
+li.separator {
+    list-style-type: none;
+}
+
+.folder a {
+    color: darkgreen;
+    font-weight: normal;
+}
+
+#idNote {
+    color: darkgray;
+    /*font-style:italic;*/
+    font-family: Calibri;
+    font-size: 12pt;
+    /*padding-left: 2em;*/
+    word-wrap:normal;
+}

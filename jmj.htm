@@ -1,0 +1,61 @@
+<html >
+<head>
+    <base target="_blank" />
+    <title>jayeshmj FAVs</title>
+    <link rel="shortcut icon" href="dude_green_red.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <link href="jmj.css" type="text/css" rel="stylesheet">
+    <script src="jmj-data.js"></script>
+    <script>
+        /* Controllers */
+        var app = angular.module('bookmarkApp', []);
+
+        app.controller('bookmarkController', function ($scope) {
+            $scope.folders = folderData;
+
+            $scope.openMultiUrls = function (urls) {
+                angular.forEach(urls, function (value, key) {
+                    var url = $scope.getGoodUrl(value);
+                    window.open(url);
+                });
+            };
+
+            $scope.getGoodUrl = function (url) {
+                var result = url.match(/^http/i) ? url : 'http://' + url;
+                return result;
+            };
+
+            $scope.getGoodTitle = function (bookmark) {
+                var result = angular.isUndefined(bookmark.title) ? bookmark.url : bookmark.title;
+                return result;
+            };
+
+        });
+    </script>
+</head>
+
+<body ng-app="bookmarkApp" ng-controller="bookmarkController">
+
+    <div id="menu">
+        <div id="menu-header">MENU</div>
+        <ul>
+            <li ng-repeat="folder in folders">
+                <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="folder" ng-repeat="folder in folders">
+        <div id="bk_{{folder.title}}" class="folder-header">{{folder.title}}</div>
+        <ul class="folder-body">
+            <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
+                <text ng-switch-when="separator">&nbsp;</text>
+                <a ng-switch-when="multi-urls" href="" ng-click="openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                <a ng-switch-default ng-href='{{getGoodUrl(bookmark.url)}}'>{{getGoodTitle(bookmark)}}</a>
+                <span ng-if="bookmark.note" id="idNote">{{bookmark.note}}</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
