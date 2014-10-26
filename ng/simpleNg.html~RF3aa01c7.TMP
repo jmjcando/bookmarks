@@ -10,13 +10,11 @@
         div.state {
             background-color:lightcyan;
             border:1px solid gray;
-            margin-top:25px;
         }
 
         div.user {
             background-color:lightgoldenrodyellow;
             border:1px solid gray;
-            margin-top:25px;
         }
 
     </style>
@@ -28,18 +26,30 @@
     <div class="state" ng-controller="stateController">
 
         <div>
-            <select ng-model="selectedStateAbbr" ng-options="obj.abbr as obj.name for obj in stateList" ng-change="onStateChange()">
+            <select ng-model="selectedState" ng-options="obj.abbr as obj.name for obj in stateList">
                 <option value="">Please select a state</option>
             </select>
         </div>
 
-        <div>Selected Value: {{selectedStateAbbr}}</div>
         <div>Selected State: {{selectedState}}</div>
 
         <div>StateList json: {{stateList}}</div>
 
     </div>
 
+
+    <div class="user" ng-controller="userController">
+
+        <div>
+            <input ng-model="user.firstName"></input>
+            <input ng-model="user.lastName"></input>
+
+        </div>
+
+        <div> user: {{user}} </div>
+
+        <div> getUserJson(): {{getUserJson()}} </div>
+    </div>
 
 
     <script>
@@ -54,40 +64,10 @@
 
             ];
 
-            $scope.selectedStateAbbr = 'NJ';
-            $scope.selectedState = {};
-
-            $scope.onStateChange = function () {
-
-                var done = false;
-                angular.forEach($scope.stateList, function (value, key) {
-                    if (!done && (value.abbr == $scope.selectedStateAbbr)) {
-                        done = true;
-                        $scope.selectedState = value;
-                    }
-                });
-            };
-
+            $scope.selectedState = 'NJ';
         });
 
-    </script>
 
-    <div class="user" ng-controller="userController">
-
-        <div>
-            <input ng-model="user.firstName"></input>
-            <input ng-model="user.lastName"></input>
-
-        </div>
-
-        <div> full name: {{user.lastName}}, {{user.firstName}}</div>
-
-        <div> user: {{user}} </div>
-
-        <div> getUserJson(): {{getUserJson()}} </div>
-    </div>
-
-    <script>
         app.controller('userController', function ($scope) {
 
             $scope.user = {
@@ -102,7 +82,6 @@
         });
 
     </script>
-
 
 </body>
 
