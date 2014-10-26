@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+    <title>jmj NG</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body ng-app="jmjApp" ng-controller="jmjController">
+    <div style="border:1px solid; margin:20px; padding:10px; ">
+        <select ng-model="selectedState" ng-options="obj.abbr as obj.name for obj in stateList">
+            <option value="">Please select a state</option>
+        </select>
+
+        Selected State: {{selectedState}}
+    </div>
+
+
+    <div id="menu">
+        <form name="myForm">
+            <input name="firstNameInput" id="firstNameInput" ng-model="user.firstName" ng-minlength="20"></input>
+
+            Dirty: <div ng-show="myFormNg.firstNameInput.$invalid">Dirty</div>
+            Pristine:<div ng-show="myFormNg.firstNameInput.$pristine">pristine</div>
+        </form>
+
+        <br /> pristine -> {{getState(firstNameInput);}}
+
+        <br />
+        <input ng-model="user.lastName"></input>
+
+        <br /> User: {{user}}
+        <br /> getJson: {{getJson()}}
+    </div>
+
+
+    <script>
+        var app = angular.module('jmjApp', []);
+
+        app.controller('jmjController', function ($scope) {
+            $scope.getState = function (inputControl) {
+                //return inputControl.$pristine;
+                return $scopr.user.firstName.$pristine;
+
+            }
+
+
+
+            $scope.user = {
+                firstName: "1st",
+                lastName: "namelast"
+            };
+
+            $scope.userJson = function () {
+                return angular.toJson($scope.user, true)
+            };
+
+            $scope.getJson = function () {
+                return angular.toJson($scope, true)
+            };
+
+
+            $scope.stateList = [
+                { abbr: "PA", name: "Pennseelvaniya" },
+                { abbr: "NY", name: "New York" },
+                { abbr: "NJ", name: "New Jersey" },
+
+            ];
+
+            $scope.selectedState = 'NJ';
+        });
+    </script>
+
+</body>
+
+</html>

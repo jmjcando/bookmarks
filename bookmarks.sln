@@ -14,8 +14,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ng", "ng", "{B507FFB9-20AE-4B7F-8D7D-08488937EFAE}"
+	ProjectSection(SolutionItems) = preProject
+		ng\simpleNg.html = ng\simpleNg.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B507FFB9-20AE-4B7F-8D7D-08488937EFAE} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 	EndGlobalSection
 EndGlobal
