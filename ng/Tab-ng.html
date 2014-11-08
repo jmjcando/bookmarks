@@ -35,6 +35,7 @@
 
 <body>
 
+    
     <div ng-app="TabsApp">
         <div id="tabs" ng-controller="TabsCtrl">
             <ul>
@@ -46,29 +47,29 @@
                 <div ng-include="currentTab"></div>
             </div>
         </div>
-    <script type="text/ng-template" id="one.tpl.html">
-        <div id="viewOne">
-            <h1>View One</h1>
-            <p>11111111</p>
-        </div>
-    </script>
+        <script type="text/ng-template" id="one.tpl.html">
+            <div id="viewOne">
+                <h1>View One</h1>
+                <p>11111111</p>
+            </div>
+        </script>
 
-    <script type="text/ng-template" id="two.tpl.html">
-        <div id="viewTwo">
-            <h1>View Two</h1>
-            <p>2222222222222</p>
-        </div>
-    </script>
+        <script type="text/ng-template" id="two.tpl.html">
+            <div id="viewTwo">
+                <h1>View Two</h1>
+                <p>2222222222222</p>
+            </div>
+        </script>
 
-    <script type="text/ng-template" id="three.tpl.html">
-        <div id="viewThree">
-            <h1>View Three</h1>
-            <p>3333333333333333</p>
-        </div>
-    </script>
+        <script type="text/ng-template" id="three.tpl.html">
+            <div id="viewThree">
+                <h1>View Three</h1>
+                <p>3333333333333333</p>
+            </div>
+        </script>
 
 
-    <script>
+        <script>
         angular.module('TabsApp', [])
         .controller('TabsCtrl', ['$scope', function ($scope) {
             $scope.tabs = [{
@@ -93,7 +94,8 @@
             }
         }]);
 
-    </script>
+        </script>
+
 
 
 
