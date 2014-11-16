@@ -4,13 +4,13 @@
     <title>jayeshmj FAVs</title>
     <link rel="shortcut icon" href="dude_green_red.ico" />
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
-    <link href="jmj.css" type="text/css" rel="stylesheet">
+    <link href="Bookmark.css" type="text/css" rel="stylesheet">
     <script>
         angular.module('BookmarkApp', []);
     </script>
 
-    <script src="jmjService.js"></script>
-    <script src="jmjCtrl.js"></script>
+    <script src="BookmarkService.js"></script>
+    <script src="BookmarkCtrl.js"></script>
 </head>
 
 <body ng-app="BookmarkApp" ng-controller="BookmarkCtrl as ctrl">
@@ -30,7 +30,7 @@
             <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
                 <text ng-switch-when="separator">&nbsp;</text>
                 <a ng-switch-when="multi-urls" href="" ng-click="ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                <a ng-switch-default ng-href='{{ctrl.getGoodUrl(bookmark.url)}}'>{{ctrl.getGoodTitle(bookmark)}}</a>
+                <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
                 <span ng-if="bookmark.note" id="idNote">{{bookmark.note}}</span>
             </li>
         </ul>
