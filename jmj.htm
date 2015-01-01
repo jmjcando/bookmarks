@@ -2,15 +2,19 @@
 <head>
     <base target="_blank" />
     <title>jayeshmj FAVs</title>
-    <link rel="shortcut icon" href="dude_green_red.ico" />
+
+    <link rel="shortcut icon" href="jmj.ico" />
+    <link href="bkmrk\Bookmark.css" type="text/css" rel="stylesheet">
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
-    <link href="Bookmark.css" type="text/css" rel="stylesheet">
     <script>
-        angular.module('BookmarkApp', []);
+        angular.module("BookmarkApp", []);
     </script>
 
-    <script src="BookmarkService.js"></script>
-    <script src="BookmarkCtrl.js"></script>
+    <script src="bkmrk\BookmarkService.js"></script>
+    <script src="bkmrk\BookmarkMockDataService.js"></script>
+    <script src="bkmrk\BookmarkDataService.js"></script>
+    <script src="bkmrk\BookmarkCtrl.js"></script>
 </head>
 
 <body ng-app="BookmarkApp" ng-controller="BookmarkCtrl as ctrl">

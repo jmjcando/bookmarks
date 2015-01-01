@@ -1,17 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9E3D5AA-7705-41B8-8680-8A66C1917D5D}"
 	ProjectSection(SolutionItems) = preProject
-		Bookmark.css = Bookmark.css
-		BookmarkCtrl.js = BookmarkCtrl.js
-		BookmarkService.js = BookmarkService.js
 		briefcase.ico = briefcase.ico
 		dude_green_red.ico = dude_green_red.ico
 		index.htm = index.htm
+		index.ico = index.ico
 		jmj.htm = jmj.htm
+		jmj.ico = jmj.ico
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -20,11 +19,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ng", "ng", "{B507FFB9-20AE-
 		ng\simpleNg.html = ng\simpleNg.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bkmrk", "bkmrk", "{02838275-67D7-4690-9295-ABC2FFC9688E}"
+	ProjectSection(SolutionItems) = preProject
+		bkmrk\Bookmark.css = bkmrk\Bookmark.css
+		bkmrk\BookmarkCtrl.js = bkmrk\BookmarkCtrl.js
+		bkmrk\BookmarkDataService.js = bkmrk\BookmarkDataService.js
+		bkmrk\BookmarkMockDataService.js = bkmrk\BookmarkMockDataService.js
+		bkmrk\BookmarkService.js = bkmrk\BookmarkService.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B507FFB9-20AE-4B7F-8D7D-08488937EFAE} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
+		{02838275-67D7-4690-9295-ABC2FFC9688E} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 	EndGlobalSection
 EndGlobal
