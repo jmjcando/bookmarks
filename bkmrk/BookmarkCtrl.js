@@ -1,14 +1,28 @@
+(function () {    "use strict";
 
-/* *******************  Controllers */
-angular.module("BookmarkApp").controller("BookmarkCtrl", function (BookmarkService) {
+    angular.module("BookmarkApp").controller("BookmarkCtrl", BookmarkCtrl);
 
-    this.folders = BookmarkService.folderData;
+    BookmarkCtrl.$injector = ["$window", "BookmarkService"];
 
-    this.openMultiUrls = function (urls) {
-        angular.forEach(urls, function (value) {
-            window.open(value);
+    function BookmarkCtrl($window, BookmarkService) {
+
+        var ctrl = this;
+
+        angular.extend(ctrl, {
+            folders: BookmarkService.folderData,
+            openMultiUrls: openMultiUrls
         });
-    };
 
-});
+        return;
+        ///////////////////
+
+        function openMultiUrls (urls) {
+            angular.forEach(urls, function (value) {
+                $window.open(value);
+            });
+        };
+
+    }
+
+}());
 

@@ -1,2 +1,5 @@
+(function () {
+    "use strict";
 
-angular.module("BookmarkApp", []);
+    angular.module("BookmarkApp", []);
+})();

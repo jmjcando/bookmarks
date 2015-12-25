@@ -1,8 +1,33 @@
+(function () {
+    "use strict";
 
-angular.module('BookmarkApp')
-    .service('BookmarkService', function (BookmarkMockDataService, BookmarkDataService) {
 
-        var me = this;
+    angular.module('BookmarkApp')
+        .service('BookmarkService', BookmarkService);
+
+    BookmarkService.$injector = ["BookmarkMockDataService", "BookmarkDataService"]
+
+    function BookmarkService(BookmarkMockDataService, BookmarkDataService) {
+
+        var service = this;
+
+        angular.extend (service, {
+            folderData: getFolderData()
+        });
+
+        return service;
+        /////////////
+
+
+        // **********************************************
+        function getFolderData() {
+
+            var folderData = BookmarkDataService; // BookmarkMockDataService
+            fixData(folderData);
+
+            return folderData;
+        }
+
 
         // ********************
         function fixData(folderData) {
@@ -36,18 +61,12 @@ angular.module('BookmarkApp')
         function fixUrl(url) {
 
             var prefix = (angular.isDefined(url) && !url.match(/^http/i)) ? "http://" : "";
-            return (prefix  + url);
+            return (prefix + url);
         }
 
 
-        // **********************************************
-        function init() {
-
-            me.folderData = BookmarkDataService; // BookmarkMockDataService
-            fixData (me.folderData);
-        }
-
-        init();
-    });
+    }
 
 
+
+}());
