@@ -10,16 +10,16 @@
 
         beforeEach(module(function ($provide) {
             $provide.service('BookmarkDataService', function () {
-                dataService = {
+                return {
                     getData: {}
                 };
-                return dataService;
             });
         }));
 
 
         beforeEach(inject(function ($injector) {
             service = $injector.get("BookmarkService");
+            dataService = $injector.get("BookmarkDataService");
         }));
 
         it('is defined', function () {
