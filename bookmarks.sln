@@ -29,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{39B6E310-BF5D-
 		js\BookmarkApp.js = js\BookmarkApp.js
 		js\BookmarkCtrl.js = js\BookmarkCtrl.js
 		js\BookmarkDataService.js = js\BookmarkDataService.js
+		js\BookmarkDataService.Test.js = js\BookmarkDataService.Test.js
 		js\BookmarkMockDataService.js = js\BookmarkMockDataService.js
 		js\BookmarkService.js = js\BookmarkService.js
 		js\BookmarkService.Test.js = js\BookmarkService.Test.js

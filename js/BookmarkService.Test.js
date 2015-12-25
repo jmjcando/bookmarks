@@ -4,41 +4,138 @@
 
     describe("BookmarkService", function () {
 
-        var service;
+        var service, dataService;
 
         beforeEach(module("BookmarkApp"));
 
-        ////////////////////////////////////
-        //  alternate method
-        ////////////////////////////////////
+        beforeEach(module(function ($provide) {
+            $provide.service('BookmarkDataService', function () {
+                dataService = {
+                    getData: {}
+                };
+                return dataService;
+            });
+        }));
+
+
         beforeEach(inject(function ($injector) {
             service = $injector.get("BookmarkService");
         }));
 
-        
-
-        fit('is defined', function () {
+        it('is defined', function () {
             expect(service).not.toBeNull();
             expect(service).not.toBe(null);
         });
 
-        fit('folderData is defined', function () {
-            expect(service.folderData).toBeDefined();
-            expect(service.folderData).not.toBeNull();
+        it('getData property is defined', function () {
+            expect(service.getData).toBeDefined();
+            expect(service.getData).not.toBeNull();
         });
 
-        it('name(property) is as expected', function () {
-            expect(service.name).toBe("Welcome");
+        it('getData() works OK when NO title', function () {
+
+            var data = [{
+                bkmrks: [
+                    { url: "http://no-title.com" },
+                ]
+            }];
+            var expected = [{
+                bkmrks: [{
+                    title: "http://no-title.com",
+                    url: "http://no-title.com"
+                }]
+            }];
+
+            dataService.getData = jasmine.createSpy().and.returnValue(data);
+            var actual = service.getData();
+
+            expect(actual).toEqual(expected);
         });
 
-        it('method() is defined', function () {
-            expect(service.method).toBeDefined();
+
+        it('getData() works OK when url has NO http prefix', function () {
+
+            var data = [{
+                bkmrks: [
+                    { url: "no-title.com" },
+                ]
+            }];
+            var expected = [{
+                bkmrks: [{
+                    title: "no-title.com",
+                    url: "http://no-title.com"
+                }]
+            }];
+
+            dataService.getData = jasmine.createSpy().and.returnValue(data);
+            var actual = service.getData();
+
+            expect(actual).toEqual(expected);
         });
 
-        it('method() returns as expected', function () {
-            expect(service.method()).toEqual(["a1", "b2", "c3"]);
+
+        it('getData() works OK for multi-urls', function () {
+
+            var data = [{
+                bkmrks: [{
+                    type: "multi-urls",
+                    urls: [
+                        "no-http.com" ,
+                        "http://goodurl.com" 
+                    ]
+                }]
+            }];
+            var expected = [{
+                bkmrks: [{
+                    type: "multi-urls",
+                    urls: [
+                        "http://no-http.com",
+                        "http://goodurl.com"
+                    ]
+                }]
+            }];
+
+            dataService.getData = jasmine.createSpy().and.returnValue(data);
+            var actual = service.getData();
+
+            expect(actual).toEqual(expected);
+        });
+
+
+        it('getData() works OK for separator', function () {
+
+            var data = [{
+                bkmrks: [{
+                    type: "separator"
+                }]
+            }];
+            var expected = [{
+                bkmrks: [{
+                    type: "separator",
+                }]
+            }];
+
+            dataService.getData = jasmine.createSpy().and.returnValue(data);
+            var actual = service.getData();
+
+            expect(actual).toEqual(expected);
         });
 
     });
 
 })();
+
+/*
+
+{
+                    "title": "FAV-1",
+                    bkmrks: [
+                        { type: 'multi-urls', title: "open-all", urls: ["nohttp.com", "http://www.yahoo.com"] },
+                        { title: "Gmail", url: "https://gmail.com" },
+                        { title: "NO http google", url: "google.com" },
+                        { url: "no-title.com" },
+                        { type: "separator" },
+                    ]
+                }
+
+*/

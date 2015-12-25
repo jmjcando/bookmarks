@@ -6,12 +6,40 @@
 
     function BookmarkDataService() {
 
-        var service = getData();
+        var service = {
+            getData: getData,    
+            getMockData: getMockData,
+        };
 
         return service;
         ///////////////////////////
 
+        
+        //**********************************
+        function getMockData() {
+            var data = [{
+                "title": "FAV-1",
+                bkmrks: [
+                    { type: 'multi-urls', title: "open-all", urls: ["nohttp.com", "http://www.yahoo.com"] },
+                    { title: "Gmail", url: "https://gmail.com" },
+                    { title: "NO http google", url: "google.com" },
+                    { url: "no-title.com" },
+                    { type: "separator" },
+                ]
+            }, {
+                "title": "FAV-2",
+                bkmrks: [
+                    { url: "spammotel.com" },
+                    { url: "freepops.org", note: "supports webmails." },
+                    { title: "Gmail", url: "https://gmail.com" },
+                    { title: "Gmail w/o http", url: "gmail.com" }
+                ]
+            }];
 
+            return data;
+        }
+
+        //**********************************
         function getData() {
 
             return [{
@@ -38,11 +66,7 @@
                                 , "linkedin.com"
                         ]
                     },
-                    //{ title: "logout: Gmail", url: "http://mail.google.com/mail/?logout" },
-                    //{ title: "logout: Y!ahoo", url: "http://login.yahoo.com/config/login?logout" },
-                    //{ title: "logout: hotmail", url: "http://mail.live.com/mail/logout.aspx" },
-                    //{ title: "logout: Sneakemail", url: "https://sneakemail.com/public/logout" },
-                    //{ title: "logout: ", url: "" },
+                   
                 ]
             }, {
                 title: "FAV-2",

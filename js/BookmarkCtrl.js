@@ -1,4 +1,5 @@
-(function () {    "use strict";
+(function () {
+    "use strict";
 
     angular.module("BookmarkApp").controller("BookmarkCtrl", BookmarkCtrl);
 
@@ -9,7 +10,7 @@
         var ctrl = this;
 
         angular.extend(ctrl, {
-            folders: dataService.folderData,
+            folders: dataService.data,
             openMultiUrls: openMultiUrls
         });
 
