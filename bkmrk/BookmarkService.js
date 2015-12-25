@@ -5,29 +5,18 @@
     angular.module('BookmarkApp')
         .service('BookmarkService', BookmarkService);
 
-    BookmarkService.$injector = ["BookmarkMockDataService", "BookmarkDataService"]
+    BookmarkService.$inject = ["BookmarkDataService"]; //"BookmarkMockDataService"
 
-    function BookmarkService(BookmarkMockDataService, BookmarkDataService) {
+    function BookmarkService(dataService) {
 
         var service = this;
 
         angular.extend (service, {
-            folderData: getFolderData()
+            folderData: fixData(dataService)
         });
 
         return service;
         /////////////
-
-
-        // **********************************************
-        function getFolderData() {
-
-            var folderData = BookmarkDataService; // BookmarkMockDataService
-            fixData(folderData);
-
-            return folderData;
-        }
-
 
         // ********************
         function fixData(folderData) {
@@ -54,6 +43,8 @@
                 });
 
             });
+
+            return folderData;
         }
 
 

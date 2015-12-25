@@ -2,14 +2,14 @@
 
     angular.module("BookmarkApp").controller("BookmarkCtrl", BookmarkCtrl);
 
-    BookmarkCtrl.$injector = ["$window", "BookmarkService"];
+    BookmarkCtrl.$inject = ["$window", "BookmarkService"];
 
-    function BookmarkCtrl($window, BookmarkService) {
+    function BookmarkCtrl($window, dataService) {
 
         var ctrl = this;
 
         angular.extend(ctrl, {
-            folders: BookmarkService.folderData,
+            folders: dataService.folderData,
             openMultiUrls: openMultiUrls
         });
 
