@@ -10,7 +10,7 @@
         var ctrl = this;
 
         angular.extend(ctrl, {
-            folders: dataService.data,
+            folders: dataService.getData(),
             openMultiUrls: openMultiUrls
         });
 
