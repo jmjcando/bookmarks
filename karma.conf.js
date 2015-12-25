@@ -1,14 +1,14 @@
 module.exports = function (config) {
     config.set({
 
-        basePath: './',
+        basePath: './js/',
 
         files: [
             "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js",
             "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-mocks.js",
 
-            "js/BookmarkApp.js",
-            "js/*.js",
+            "BookmarkApp.js",
+            "*.js",
         ],
 
         //exclude: [
