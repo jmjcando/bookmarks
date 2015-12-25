@@ -1,71 +1,67 @@
-////module.exports = function (config) {
-////    config.set({
+module.exports = function (config) {
+    config.set({
 
-////        basePath: './',
+        basePath: './',
 
-////        files: [
-////            "_libs/external/js/angular.js",
-////            "_libs/external/js/angular-mocks.js",
-////            "_libs/external/js/*.js",
+        files: [
+            "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js",
+            "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-mocks.js",
 
-////            "angular-samples/ajax/ajax-$q.js",
-////            "angular-samples/ajax/ajax-$q.TEST.js",
+            "js/BookmarkApp.js",
+            "js/*.js",
+        ],
 
-////            "angular-test/_MyAngularTestApp.js",
-////            "angular-test/**/*.js",
-////        ],
+        //exclude: [
+        //    "_libs/external/js/*.min.js",
+        //    "_libs/external/js/*.map",
+        //    "angular-test/**/Simple*.js",
+        //],
 
-////        exclude: [
-////            "_libs/external/js/*.min.js",
-////            "_libs/external/js/*.map",
-////            "angular-test/**/Simple*.js",
-////        ],
+        autoWatch: true,
+        frameworks: ['jasmine'],
+        browserNoActivityTimeout: 0,
+        browsers: [
+            'PhantomJS',
+            //'Chrome',
+        ],
 
-////        autoWatch: true,
-////        frameworks: ['jasmine'],
-////        browserNoActivityTimeout: 0,
-////        browsers: [
-////            'PhantomJS',
-////            //'Chrome',
-////        ],
+        plugins: [
+            'karma-jasmine',
 
-////        plugins: [
-////            'karma-jasmine',
+            'karma-phantomjs-launcher',
+            'karma-chrome-launcher',
+            'karma-firefox-launcher',
 
-////            'karma-phantomjs-launcher',
-////            'karma-chrome-launcher',
-////            'karma-firefox-launcher',
+            'karma-junit-reporter',
+            'karma-mocha-reporter',
+        ],
 
-////            'karma-junit-reporter',
-////            'karma-mocha-reporter',
-////        ],
+        logLevel:
+            //config.LOG_DEBUG,
+            config.LOG_INFO,
 
-////        logLevel:
-////            //config.LOG_DEBUG,
-////            config.LOG_INFO,
+        reporters: ["mocha"],  //'progress', junit, "dots"
 
-////        reporters: ["mocha"],  //'progress', junit, "dots"
+        junitReporter: {
+            outputFile: 'test-results.xml',
+            suite: 'unit'
+        },
 
-////        junitReporter: {
-////            outputFile: 'test-results.xml',
-////            suite: 'unit'
-////        },
-
-////        /*
-////            Value	Description
-////            full (default)	all output is printed to the console
-////            autowatch	first run will have the full output and the next runs just output the summary and errors in mocha style
-////            minimal	only the summary and errors are printed to the console in mocha style
-////            noFailures	the failure details are not logged
-////        */
-////        ////mochaReporter: {
-////        ////    //output: 'autowatch'
-////        ////},
+        /*
+            Value	Description
+            full (default)	all output is printed to the console
+            autowatch	first run will have the full output and the next runs just output the summary and errors in mocha style
+            minimal	only the summary and errors are printed to the console in mocha style
+            noFailures	the failure details are not logged
+        */
+        ////mochaReporter: {
+        ////    //output: 'autowatch'
+        ////},
 
 
-////        // report which specs are slower than 500ms
-////        reportSlowerThan: 500,
+        // report which specs are slower than 500ms
+        reportSlowerThan: 500,
 
 
-////    });
-////};
+    });
+};
