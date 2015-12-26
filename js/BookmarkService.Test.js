@@ -27,98 +27,126 @@
             expect(service).not.toBe(null);
         });
 
-        it('getData property is defined', function () {
-            expect(service.getData).toBeDefined();
-            expect(service.getData).not.toBeNull();
-        });
 
-        it('getData() works OK when NO title', function () {
+        describe("getData()", function () {
 
-            var data = [{
-                bkmrks: [
-                    { url: "http://no-title.com" },
-                ]
-            }];
-            var expected = [{
-                bkmrks: [{
-                    title: "http://no-title.com",
-                    url: "http://no-title.com"
-                }]
-            }];
+            it('is defined and is a function', function () {
+                var actual = service.getData;
 
-            dataService.getData = jasmine.createSpy().and.returnValue(data);
-            var actual = service.getData();
+                expect(actual).toBeDefined();
+                expect(actual).not.toBeNull();
+                expect(angular.isFunction(actual)).toEqual(true);
+            });
 
-            expect(actual).toEqual(expected);
-        });
+            it('is OK when NO title', function () {
 
-
-        it('getData() works OK when url has NO http prefix', function () {
-
-            var data = [{
-                bkmrks: [
-                    { url: "no-title.com" },
-                ]
-            }];
-            var expected = [{
-                bkmrks: [{
-                    title: "no-title.com",
-                    url: "http://no-title.com"
-                }]
-            }];
-
-            dataService.getData = jasmine.createSpy().and.returnValue(data);
-            var actual = service.getData();
-
-            expect(actual).toEqual(expected);
-        });
-
-
-        it('getData() works OK for multi-urls', function () {
-
-            var data = [{
-                bkmrks: [{
-                    type: "multi-urls",
-                    urls: [
-                        "no-http.com" ,
-                        "http://goodurl.com" 
+                var data = [{
+                    bkmrks: [
+                        { url: "http://no-title.com" },
                     ]
-                }]
-            }];
-            var expected = [{
-                bkmrks: [{
-                    type: "multi-urls",
-                    urls: [
-                        "http://no-http.com",
-                        "http://goodurl.com"
+                }];
+                var expected = [{
+                    bkmrks: [{
+                        title: "http://no-title.com",
+                        url: "http://no-title.com"
+                    }]
+                }];
+
+                dataService.getData = jasmine.createSpy().and.returnValue(data);
+                var actual = service.getData();
+
+                expect(actual).toEqual(expected);
+            });
+
+
+            it('is OK when url has NO http prefix', function () {
+
+                var data = [{
+                    bkmrks: [
+                        { url: "no-title.com" },
                     ]
-                }]
-            }];
+                }];
+                var expected = [{
+                    bkmrks: [{
+                        title: "no-title.com",
+                        url: "http://no-title.com"
+                    }]
+                }];
 
-            dataService.getData = jasmine.createSpy().and.returnValue(data);
-            var actual = service.getData();
+                dataService.getData = jasmine.createSpy().and.returnValue(data);
+                var actual = service.getData();
 
-            expect(actual).toEqual(expected);
+                expect(actual).toEqual(expected);
+            });
+
+
+            it('is OK for multi-urls', function () {
+
+                var data = [{
+                    bkmrks: [{
+                        type: "multi-urls",
+                        urls: [
+                            "no-http.com",
+                            "http://goodurl.com"
+                        ]
+                    }]
+                }];
+                var expected = [{
+                    bkmrks: [{
+                        type: "multi-urls",
+                        urls: [
+                            "http://no-http.com",
+                            "http://goodurl.com"
+                        ]
+                    }]
+                }];
+
+                dataService.getData = jasmine.createSpy().and.returnValue(data);
+                var actual = service.getData();
+
+                expect(actual).toEqual(expected);
+            });
+
+
+            it('is OK for separator', function () {
+
+                var data = [{
+                    bkmrks: [{
+                        type: "separator"
+                    }]
+                }];
+                var expected = [{
+                    bkmrks: [{
+                        type: "separator",
+                    }]
+                }];
+
+                dataService.getData = jasmine.createSpy().and.returnValue(data);
+                var actual = service.getData();
+
+                expect(actual).toEqual(expected);
+            });
+
         });
 
 
-        it('getData() works OK for separator', function () {
+        describe("getDataRows()", function () {
 
-            var data = [{
-                bkmrks: [{
-                    type: "separator"
-                }]
-            }];
-            var expected = [{
-                bkmrks: [{
-                    type: "separator",
-                }]
-            }];
+            it('is defined and is a function', function () {
+                var actual = service.getDataRows;
 
-            dataService.getData = jasmine.createSpy().and.returnValue(data);
-            var actual = service.getData();
+                expect(actual).toBeDefined();
+                expect(actual).not.toBeNull();
+                expect(angular.isFunction(actual)).toEqual(true);
+            });
 
-            expect(actual).toEqual(expected);
+            it('returns valid data', function () {
+
+                dataService.getData = jasmine.createSpy().and.returnValue([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
+                var actual = service.getDataRows();
+                expect(actual).toEqual([[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11], [12, 13, 14, 15]]);
+                //dump(actual);
+            });
         });
 
     });

@@ -4,9 +4,15 @@
     <title>jayeshmj FAVs</title>
 
     <link rel="shortcut icon" href="asset/jmj.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+
     <link href="css\Bookmark.css" type="text/css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
 
     <script src="js\BookmarkApp.js"></script>
     <script src="js\BookmarkCtrl.js"></script>
@@ -17,8 +23,8 @@
 
 <body ng-app="BookmarkApp" ng-controller="BookmarkCtrl as ctrl">
 
-    <div id="menu">
-        <div id="menu-header">MENU</div>
+    <div class="bkmrk-menu">
+        <div class="bkmrk-menu-header">MENU ({{::ctrl.version}})</div>
         <ul>
             <li ng-repeat="folder in ctrl.folders">
                 <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
@@ -26,14 +32,31 @@
         </ul>
     </div>
 
-    <div class="folder" ng-repeat="folder in ctrl.folders">
-        <div id="bk_{{folder.title}}" class="folder-header">{{folder.title}}</div>
-        <ul class="folder-body">
+    <div ng-if="(ctrl.version === 'new')" class="container-fluid" >
+        <div class="row" ng-repeat="row in ctrl.folderRows" ><!--ng-if="$index < 2"-->
+            <div class="col-md-2" ng-repeat="folder in row">
+                <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
+                <ul class="bkmrk-folder-body">
+                    <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
+                        <text ng-switch-when="separator">&nbsp;</text>
+                        <a ng-switch-when="multi-urls" href="" ng-click="ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                        <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
+                        <span ng-if="bookmark.note" class="bkmrk-note">{{bookmark.note}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-if="(ctrl.version === 'old')" class="bkmrk-folder" ng-repeat="folder in ctrl.folders">
+        <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
+        <ul class="bkmrk-folder-body">
             <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
                 <text ng-switch-when="separator">&nbsp;</text>
                 <a ng-switch-when="multi-urls" href="" ng-click="ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
                 <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
-                <span ng-if="bookmark.note" id="idNote">{{bookmark.note}}</span>
+                <span ng-if="bookmark.note" class="bkmrk-note">{{bookmark.note}}</span>
             </li>
         </ul>
     </div>

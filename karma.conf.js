@@ -37,8 +37,8 @@ module.exports = function (config) {
         ],
 
         logLevel:
-            //config.LOG_DEBUG,
-            config.LOG_INFO,
+            config.LOG_DEBUG,
+            //config.LOG_INFO,
 
         reporters: ["mocha"],  //'progress', junit, "dots"
 
