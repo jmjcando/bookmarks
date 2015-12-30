@@ -11,14 +11,17 @@
         beforeEach(module(function ($provide) {
             $provide.service('BookmarkService', function () {
                 return {
-                    getData: function () { return []; },
-                    getDataRows: function () { return []; },
+                    getData: jasmine.createSpy().and.returnValue([1, 2, 3]),
+                    getDataRows: jasmine.createSpy().and.returnValue([1, 2, 3]), 
                 };
             });
 
             $provide.service('$window', function () {
                 return {
-                    open: angular.noop
+                    open: angular.noop,
+                    location: {
+                        search: ""
+                    }
                 };
             });
 
@@ -38,6 +41,14 @@
         });
 
         
+        it('version is defined', function () {
+            var expected = ctrl.version;
+
+            expect(expected).toBeDefined();
+            expect(expected).not.toBeNull();
+        });
+
+
         it('folders is defined', function () {
             var expected = ctrl.folders;
 

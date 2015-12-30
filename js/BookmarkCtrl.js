@@ -3,14 +3,11 @@
 
     angular.module("BookmarkApp").controller("BookmarkCtrl", BookmarkCtrl);
 
-    BookmarkCtrl.$inject = ["$window", "$log", "$location", "BookmarkService"];
+    BookmarkCtrl.$inject = ["$window", "$log", "BookmarkService"];
 
-    function BookmarkCtrl($window, $log, $location, dataService) {
+    function BookmarkCtrl($window, $log, dataService) {
 
         var ctrl = this;
-
-        $log.info("$window.location.search:", $window.location.search);
-        $log.warn("$location.search():", $location.search());
 
         angular.extend(ctrl, {
             //dataService: dataService,
@@ -28,7 +25,7 @@
         function getVersion() {
             var qs = $window.location.search;
 
-            return (/old/i).test(qs) ? "old" : "new";
+            return (/old/i).test(qs) ? "old" : "";
         }
 
 
