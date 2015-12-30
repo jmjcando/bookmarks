@@ -11,11 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ng", "ng", "{B507FFB9-20AE-4B7F-8D7D-08488937EFAE}"
-	ProjectSection(SolutionItems) = preProject
-		ng\simpleNg.html = ng\simpleNg.html
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{98B3BC22-4746-40FD-BA5E-CB021929F157}"
 	ProjectSection(SolutionItems) = preProject
 		asset\briefcase.ico = asset\briefcase.ico
@@ -31,7 +26,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{39B6E310-BF5D-
 		js\BookmarkCtrl.Test.js = js\BookmarkCtrl.Test.js
 		js\BookmarkDataService.js = js\BookmarkDataService.js
 		js\BookmarkDataService.Test.js = js\BookmarkDataService.Test.js
-		js\BookmarkMockDataService.js = js\BookmarkMockDataService.js
 		js\BookmarkService.js = js\BookmarkService.js
 		js\BookmarkService.Test.js = js\BookmarkService.Test.js
 	EndProjectSection
@@ -46,7 +40,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B507FFB9-20AE-4B7F-8D7D-08488937EFAE} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 		{98B3BC22-4746-40FD-BA5E-CB021929F157} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 		{39B6E310-BF5D-47BA-9F00-8DD32C1544AE} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 		{E933A232-D7D9-44D6-AA81-68D97AB99378} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
