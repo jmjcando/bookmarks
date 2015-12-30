@@ -11,7 +11,7 @@
 
         angular.extend(ctrl, {
             //dataService: dataService,
-            version: getVersion(),
+            isOldVersion: isOldVersion,
             folders: dataService.getData(),
             folderRows: dataService.getDataRows(),
             openMultiUrls: openMultiUrls
@@ -22,10 +22,10 @@
 
 
         ////////////////
-        function getVersion() {
+        function isOldVersion() {
             var qs = $window.location.search;
 
-            return (/old/i).test(qs) ? "old" : "";
+            return (/old/i).test(qs);
         }
 
 

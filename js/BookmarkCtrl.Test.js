@@ -27,7 +27,6 @@
 
         }));
 
-
         beforeEach(inject(function ($injector) {
             var $controller = $injector.get("$controller");
             ctrl = $controller('BookmarkCtrl');
@@ -41,13 +40,27 @@
         });
 
         
-        it('version is defined', function () {
-            var expected = ctrl.version;
+        it('isOldVersion is defined', function () {
+            var expected = ctrl.isOldVersion;
 
             expect(expected).toBeDefined();
             expect(expected).not.toBeNull();
         });
 
+        it('isOldVersion returns correctly', function () {
+
+            $window.location.search = "old";
+            var expected = ctrl.isOldVersion();
+            expect(expected).toEqual(true);
+
+            $window.location.search = "new";
+            var expected = ctrl.isOldVersion();
+            expect(expected).toEqual(false);
+
+            $window.location.search = "old123";
+            var expected = ctrl.isOldVersion();
+            expect(expected).toEqual(true);
+        });
 
         it('folders is defined', function () {
             var expected = ctrl.folders;
@@ -75,19 +88,19 @@
 
             it('calls $window.open', function () {
 
-                $window.open = jasmine.createSpy();
+                var spy = $window.open = jasmine.createSpy();
                 ctrl.openMultiUrls(["aaa", "bbbb"]);
 
-                expect($window.open.calls.any()).toEqual(true);
-                expect($window.open.calls.count()).toEqual(2);
+                expect(spy.calls.any()).toEqual(true);
+                expect(spy.calls.count()).toEqual(2);
             });
 
             it('$window.open arguments verified', function () {
 
-                $window.open = jasmine.createSpy();
+                var spy = $window.open = jasmine.createSpy();
                 ctrl.openMultiUrls(["aaa", "bbbb"]);
 
-                expect($window.open.calls.allArgs()).toEqual([["aaa"], ["bbbb"]]);
+                expect(spy.calls.allArgs()).toEqual([["aaa"], ["bbbb"]]);
             });
 
         });

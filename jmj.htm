@@ -26,7 +26,7 @@
     <div class="bkmrk-menu">
         <div class="bkmrk-menu-header">
             MENU 
-            <span ng-if="(ctrl.version === 'old')">({{::ctrl.version}})</span>
+            <span ng-if="(ctrl.isOldVersion())">(old)</span>
         </div>
         <ul>
             <li ng-repeat="folder in ctrl.folders">
@@ -35,7 +35,7 @@
         </ul>
     </div>
 
-    <div ng-if="(ctrl.version !== 'old')" class="container-fluid">
+    <div ng-if="(!ctrl.isOldVersion())" class="container-fluid">
         <div class="row" ng-repeat="row in ctrl.folderRows" ><!--ng-if="$index < 2"-->
             <div class="col-md-2" ng-repeat="folder in row">
                 <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
@@ -52,7 +52,7 @@
     </div>
 
 
-    <div ng-if="(ctrl.version === 'old')" class="bkmrk-folder" ng-repeat="folder in ctrl.folders">
+    <div ng-if="ctrl.isOldVersion()" class="bkmrk-folder" ng-repeat="folder in ctrl.folders">
         <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
         <ul class="bkmrk-folder-body">
             <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
