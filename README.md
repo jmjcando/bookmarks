@@ -1,8 +1,8 @@
 Not yet good markdown
 
-https://github.com/jmjcando/jmjBookmarks  MaheshJ  
-https://github.com/jmjcando/jmjBookmarks/jmj.htm  - Jayesh J  
-https://github.com/jmjcando/jmjBookmarks/jmj.htm?old  - Jayesh J (old)
+http://jmjcando.github.com/jmjBookmarks  MaheshJ  
+http://jmjcando.github.com/jmjBookmarks/jmj.htm  - Jayesh J  
+http://jmjcando.github.com/jmjBookmarks/jmj.htm?old  - Jayesh J (old)
 
 
 ## bookmarks
