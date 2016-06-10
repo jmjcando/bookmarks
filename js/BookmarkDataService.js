@@ -218,6 +218,13 @@
                 bkmrks:
                 [
                     { title:'angularjs - changelog', url: 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md'},
+                    {type: 'separator'},
+
+                    { title:'markdown - github', url: 'https://help.github.com/articles/basic-writing-and-formatting-syntax/'},
+                    { title:'markdown - Daring Fireball', url: 'http://daringfireball.net/projects/markdown'},
+                    { title:'markdown - Visual studio', url: 'https://www.visualstudio.com/en-us/docs/reference/markdown-guidance'},
+                    {type: 'separator'},
+                    
                     { title: "daniel moth", url: "http://www.danielmoth.com", note: ".Net" },
                     { title: "Top 10 things VS2008", url: "http://www.danielmoth.com/Blog/2007/11/top-10-things-to-know-about-visual.html" },
                     { title: "Aqua Studio (4.7.2) docs", url: "http://docs.aquafold.com/ads/4.7/" },
