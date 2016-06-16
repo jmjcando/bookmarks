@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9E3D5AA-7705-41B8-8680-8A66C1917D5D}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,8 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{98B3BC22
 		asset\jmj.ico = asset\jmj.ico
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{39B6E310-BF5D-47BA-9F00-8DD32C1544AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{39B6E310-BF5D-47BA-9F00-8DD32C1544AE}"
 	ProjectSection(SolutionItems) = preProject
+		css\Bookmark.css = css\Bookmark.css
 		js\BookmarkApp.js = js\BookmarkApp.js
 		js\BookmarkCtrl.js = js\BookmarkCtrl.js
 		js\BookmarkCtrl.Test.js = js\BookmarkCtrl.Test.js
@@ -30,18 +31,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{39B6E310-BF5D-
 		js\BookmarkService.Test.js = js\BookmarkService.Test.js
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{E933A232-D7D9-44D6-AA81-68D97AB99378}"
-	ProjectSection(SolutionItems) = preProject
-		css\Bookmark.css = css\Bookmark.css
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{98B3BC22-4746-40FD-BA5E-CB021929F157} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
+		{98B3BC22-4746-40FD-BA5E-CB021929F157} = {39B6E310-BF5D-47BA-9F00-8DD32C1544AE}
 		{39B6E310-BF5D-47BA-9F00-8DD32C1544AE} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
-		{E933A232-D7D9-44D6-AA81-68D97AB99378} = {E9E3D5AA-7705-41B8-8680-8A66C1917D5D}
 	EndGlobalSection
 EndGlobal
