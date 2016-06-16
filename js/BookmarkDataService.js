@@ -161,9 +161,9 @@
                 title: "HomePage",
                 bkmrks:
                 [
-                    { title: "Jayesh @ github", url: "http://jmjcando.github.io/jmjBookmarks/jmj.htm" },
-                    { title: "Mahesh @ github", url: "http://jmjcando.github.io/jmjBookmarks" },
-                    { title: "JmjCanDo @ github - UserPage", url: "http://jmjcando.github.io" },
+                    { title: "Jayesh bookmarks @ github", url: "http://jmjcando.github.io/bookmarks/jmj.htm" },
+                    { title: "Mahesh bookmarks @ github", url: "http://jmjcando.github.io/bookmarks" },
+                    { title: "JmjCanDo Userpage @ github", url: "http://jmjcando.github.io" },
                     { type: 'separator' },
                     { title: "JmjCanDo @ github", url: "https://github.com/jmjcando" },
                     { title: "JmjCanDo @ visualstudio", url: "http://jmjcando.visualstudio.com" },
