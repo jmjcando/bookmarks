@@ -1,13 +1,15 @@
 (function () {
+
     "use strict";
 
+    var ME = 'BookmarkService';
 
-    angular.module('BookmarkApp')
-        .service('BookmarkService', BookmarkService);
+    angular.module('app')
+        .service(ME, fn);
 
-    BookmarkService.$inject = ["BookmarkDataService"];
-
-    function BookmarkService(dataService) {
+    ////////////////////////////////////////////////////
+    fn.$inject = ['APP_CONST'];
+    function fn(APP_CONST) {
 
         var service = this;
 
@@ -21,7 +23,7 @@
 
         //********************
         function getData() {
-            var data = angular.copy(dataService.getData());  //getMockData()
+            var data = angular.copy(APP_CONST.data);  //getMockData()
 
             fixData(data);
             return data;
