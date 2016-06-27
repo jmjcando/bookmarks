@@ -13,8 +13,8 @@
 
 
     ///////////////////////////
-    fn.$inject = ["$window", "$log", "BookmarkService"];
-    function fn($window, $log, dataService) {
+    fn.$inject = ["$log", '$window', "BookmarkService"];
+    function fn($log, $window, dataService) {
 
         var ctrl = this;
 
@@ -23,23 +23,16 @@
             isOldVersion: /old/i.test($window.location.search),
             folders: dataService.getData(),
             folderRows: dataService.getDataRows(),
-            openMultiUrls: openMultiUrls
+            
         });
 
         $log.log(ME, ctrl);
-
+        
 
         return;
         ///////////////////
 
 
-
-        ///////////////////////////
-        function openMultiUrls (urls) {
-            angular.forEach(urls, function (value) {
-                $window.open(value);
-            });
-        };
 
     }
 

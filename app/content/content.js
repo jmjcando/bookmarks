@@ -22,16 +22,26 @@
 
 
     /////////////////////////////////////////////
-    fn.$inject = ["$log"];
-    function fn($log) {
+    fn.$inject = ['$log', '$window'];
+    function fn($log, $window) {
         var ctrl = this;
 
         extend(ctrl, {
+            openMultiUrls: openMultiUrls
         });
 
-        return;
+        return ctrl;
         /////////////////
+
+        ///////////////////////////
+        function openMultiUrls (urls) {
+            angular.forEach(urls, function (value) {
+                $window.open(value);
+            });
+        };
+
     }
+
 
 })();
 

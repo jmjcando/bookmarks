@@ -28,6 +28,63 @@
                 { title: "NO http google", url: "google.com" },
                 { url: "no-title.com" },
                 { type: "separator" },
+                { title: "BING", url: "http://bing.com" },
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
+            ]
+        }, {
+            "title": "FAV-2",
+            bkmrks: [
+                { url: "spammotel.com" },
+                { url: "freepops.org", note: "supports webmails." },
+                { title: "Gmail", url: "https://gmail.com" },
+                { title: "Gmail w/o http", url: "gmail.com" }
             ]
         }, {
             "title": "FAV-2",

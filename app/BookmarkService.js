@@ -23,7 +23,9 @@
 
         //********************
         function getData() {
-            var data = angular.copy(APP_CONST.data);  //getMockData()
+           var _d = APP_CONST.data; // APP_CONST.data; mockData
+
+            var data = angular.copy(_d);
 
             fixData(data);
             return data;
