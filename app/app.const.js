@@ -276,6 +276,7 @@
             title: "Tech",
             bkmrks:
             [
+                { title: 'Google JavaScript Style Guide', url: 'https://google.github.io/styleguide/javascriptguide.xml' },
                 { title: 'angularjs - changelog', url: 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md' },
                 { type: 'separator' },
 
