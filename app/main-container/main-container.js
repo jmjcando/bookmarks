@@ -3,7 +3,7 @@
 
     var ME = 'mainContainer';
 
-       /////////////////////////////////////////////
+    /////////////////////////////////////////////
     angular.module("app")
         .component(ME, {
             templateUrl: ["APP_CONST", function (APP_CONST) { return APP_CONST.filePath[ME]; }],
@@ -13,26 +13,22 @@
 
 
     ///////////////////////////
-    fn.$inject = ["$log", '$window', "BookmarkService"];
+    fn.$inject = ["$log", '$window', "dataService"];
     function fn($log, $window, dataService) {
 
         var ctrl = this;
 
         angular.extend(ctrl, {
-            //dataService: dataService,
             isOldVersion: /old/i.test($window.location.search),
-            folders: dataService.getData(),
-            folderRows: dataService.getDataRows(),
+            folders: dataService.data,
+            folderRows: dataService.dataRows,
             
         });
 
         $log.log(ME, ctrl);
-        
 
         return;
         ///////////////////
-
-
 
     }
 

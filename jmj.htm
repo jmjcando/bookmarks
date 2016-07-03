@@ -42,7 +42,7 @@
         <div ng-if="!$ctrl.isOldVersion" class="container-fluid">
 
             <div class="row" ng-repeat="row in $ctrl.folderRows">
-                <div class="col-md-2 list-group" ng-repeat="folder in row">
+                <div class="col-xs-2 list-group" ng-repeat="folder in row">
                     <div id="bk_{{folder.title}}" class="list-group-item active">{{folder.title}}</div>
 
                     <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
@@ -83,7 +83,7 @@
 
     <script src="app/app.js"></script>
     <script src="app/app.const.js"></script>
-    <script src="app/BookmarkService.js"></script>
+    <script src="app/dataService.js"></script>
     <script src="app/menu/menu.js"></script>
     <script src="app/content/content.js"></script>
     <script src="app/main-container/main-container.js"></script>
