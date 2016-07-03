@@ -8,8 +8,8 @@
         .service(ME, fn);
 
     ////////////////////////////////////////////////////
-    fn.$inject = ['APP_CONST'];
-    function fn(APP_CONST) {
+    fn.$inject = ['$window', 'APP_CONST'];
+    function fn($window, APP_CONST) {
 
         var service = this;
 
@@ -17,6 +17,7 @@
         var dataRows = getDataRows(data);
 
         angular.extend (service, {
+            isOldVersion: /old/i.test($window.location.search),
             data: data,
             dataRows: dataRows,
         });

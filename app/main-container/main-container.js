@@ -13,13 +13,13 @@
 
 
     ///////////////////////////
-    fn.$inject = ["$log", '$window', "dataService"];
-    function fn($log, $window, dataService) {
+    fn.$inject = ["$log", "dataService"];
+    function fn($log, dataService) {
 
         var ctrl = this;
 
         angular.extend(ctrl, {
-            isOldVersion: /old/i.test($window.location.search),
+            isOldVersion: dataService.isOldVersion,
             folders: dataService.data,
             folderRows: dataService.dataRows,
             
