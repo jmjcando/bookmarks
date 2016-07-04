@@ -3,6 +3,16 @@ body {
     font-family: "Calibri", "Cambria", "Verdana", "sans-serif";
 }
 
+.app-scrollable-menu {
+    height: auto;
+    max-height: 90vh; /*200px;*/
+    overflow-x: hidden;
+}
+
+.app-folder-header {
+    margin-bottom:50px;
+}
+
 .bkmrk-menu {
     position: fixed;
     right: 0;
@@ -27,11 +37,6 @@ body {
         background-color: darkred;
         padding: .5em;
         margin: 0;
-    }
-
-
-    .bkmrk-menu a {
-        /*word-wrap:normal;*/
     }
 
     .bkmrk-menu:hover ul {
