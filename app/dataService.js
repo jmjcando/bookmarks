@@ -8,16 +8,23 @@
         .service(ME, fn);
 
     ////////////////////////////////////////////////////
-    fn.$inject = ['$window', 'APP_CONST'];
-    function fn($window, APP_CONST) {
+    fn.$inject = ['$location', '$log', '$routeParams', 'APP_CONST'];
+    function fn($location, $log, $routeParams, APP_CONST) {
 
+        $log.log (ME, $routeParams);
         var service = this;
+        var searchObject  = $location.search();
+        searchObject.version = searchObject.version || null; 
+        searchObject.data = searchObject.data || null; 
+        
+        var isOldVersion = /old/i.test(searchObject.version);
+        var isMockData  = /mock/i.test(searchObject.data);
 
         var data = getData();
         var dataRows = getDataRows(data);
 
         angular.extend (service, {
-            isOldVersion: /old/i.test($window.location.search),
+            isOldVersion: isOldVersion,
             data: data,
             dataRows: dataRows,
         });
@@ -27,10 +34,8 @@
 
         //********************
         function getData() {
-            var _d = APP_CONST.data; // APP_CONST.data; mockData
-
+            var _d = APP_CONST[isMockData ? 'mockData': 'data'];
             var data = angular.copy(_d);
-
             fixData(data);
             return data;
         }
