@@ -440,17 +440,32 @@
         {
             title: "_Preeti - Jobs",
             bkmrks:
-        [{ title: "__craigslist jobs - admin/office", url: "http://cnj.craigslist.org/ofc/" },
-        { title: "__craigslist jobs - cutomer service", url: "http://cnj.craigslist.org/csr/" },
-        { title: "__craigslist jobs - PT", url: "http://cnj.craigslist.org/search/jjj?query=&amp;addFour=part-time" },
-        { title: "American Staffing Assoc", url: "http://www.americanstaffing.net/" },
-        { title: "Complete Personnel Services", url: "http://completepersonnel.com/" },
-        { title: "Express Personnel - Somerville", url: "http://bridgewaternj.expresspersonnel.com/jobs/search/" },
-        { title: "Express Personnel : sayerville", url: "http://sayrevillenj.expresspersonnel.com/jobs/search/" },
-        { title: "Express Personnel Services", url: "http://expresspersonnel.com/us/" },
-        { title: "Kelly Services : Kelly Global Home", url: "http://www.kellyservices.com/web/global/services/en/pages/" },
-        { title: "OfficeTeam - Temp Staffing", url: "http://www.officeteam.com/portal/site/ot-us" }
-        ]
+            [
+                { title: "__craigslist jobs - admin/office", url: "http://cnj.craigslist.org/ofc/" },
+                { title: "__craigslist jobs - cutomer service", url: "http://cnj.craigslist.org/csr/" },
+                { title: "__craigslist jobs - PT", url: "http://cnj.craigslist.org/search/jjj?query=&amp;addFour=part-time" },
+                { title: "American Staffing Assoc", url: "http://www.americanstaffing.net/" },
+                { title: "Complete Personnel Services", url: "http://completepersonnel.com/" },
+                { title: "Express Personnel - Somerville", url: "http://bridgewaternj.expresspersonnel.com/jobs/search/" },
+                { title: "Express Personnel : sayerville", url: "http://sayrevillenj.expresspersonnel.com/jobs/search/" },
+                { title: "Express Personnel Services", url: "http://expresspersonnel.com/us/" },
+                { title: "Kelly Services : Kelly Global Home", url: "http://www.kellyservices.com/web/global/services/en/pages/" },
+                { title: "OfficeTeam - Temp Staffing", url: "http://www.officeteam.com/portal/site/ot-us" }
+            ]
+        }, { 
+            title: "Swadhyay - THE Work",
+            bkmrks: [
+                { title: "bhavferi - NEW", url: "https://www.swday.org/mbhavferi/" },
+                { title: "bhavferi - old", url: "https://www.swday.org" },
+                { title: "Dadaji", url: "http://www.dadaji.net/" },
+                { title: "DBT Link", url: "http://www.utexas.edu/students/dbt/" },
+                { title: "Gita Pathshala - Sudha Varsha", url: "http://www.gitapathshala.org/" },
+                { title: "Swadhyay Pariwar", url: "http://www.swadhyay.org/" },
+                { url: "http://yogeshwarkrushi.blogspot.com" },
+                { url: "http://groups.yahoo.com/group/Swadhyay/" },
+                { url: "http://groups.yahoo.com/group/Swadhyay-discuss" },
+                { url: "http://groups.yahoo.com/group/yuvan" }
+            ]
         },
         {
             title: "_temp",
@@ -919,19 +934,6 @@
         { title: "tips", url: "http://www.timesonline.co.uk/article/0,,7-1501139,00.html" },
         { title: "Uclick", url: "http://content.uclick.com/content/sudoc.html" }
         ]
-        },
-        {
-            title: "THE work",
-            bkmrks:
-            [{ title: "Dadaji", url: "http://www.dadaji.net/" },
-        { title: "DBT Link", url: "http://www.utexas.edu/students/dbt/" },
-        { title: "Gita Pathshala - Sudha Varsha", url: "http://www.gitapathshala.org/" },
-        { title: "Swadhyay Pariwar", url: "http://www.swadhyay.org/" },
-        { url: "http://yogeshwarkrushi.blogspot.com" },
-        { url: "http://groups.yahoo.com/group/Swadhyay/" },
-        { url: "http://groups.yahoo.com/group/Swadhyay-discuss" },
-        { url: "http://groups.yahoo.com/group/yuvan" }
-            ]
         },
         {
             title: "Address search",
