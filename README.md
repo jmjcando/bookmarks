@@ -1,9 +1,12 @@
 Not yet very good markdown
 
-- http://jmjcando.github.com/jmjBookmarks  MaheshJ  
-- http://jmjcando.github.com/jmjBookmarks/jmj.htm  - Jayesh J  
-  - http://jmjcando.github.com/jmjBookmarks/jmj.htm?version=old  - Jayesh J (old)
-  - http://jmjcando.github.com/jmjBookmarks/jmj.htm?data=mock  - Jayesh J (mock data, useful for testing)
+Visual Studio Code is used, so all files in the folder tree are used. bookmarks.sln (Visual studio) is not up-to-date and not used anymore.
+
+# Links:
+- http://jmjcando.github.com/Bookmarks  MaheshJ  
+- http://jmjcando.github.com/Bookmarks/jmj.htm  - Jayesh J  
+  - http://jmjcando.github.com/Bookmarks/jmj.htm?version=old  - Jayesh J (old)
+  - http://jmjcando.github.com/Bookmarks/jmj.htm?data=mock  - Jayesh J (mock data, useful for testing)
 
 
 # Features:
