@@ -14,7 +14,7 @@
         return {
             menu: '/menu.tpl',
             content: '/content.tpl',
-            mainContainer: '/maincontainer.tpl',
+            "app-main-container": '/app-main-container.tpl',
         };
     }
 

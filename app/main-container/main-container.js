@@ -1,11 +1,12 @@
 (function () {
     "use strict";
 
-    var ME = 'mainContainer';
+    var ME = 'app-main-container';
+    var COMPONENT = 'appMainContainer';
 
     /////////////////////////////////////////////
     angular.module("app")
-        .component(ME, {
+        .component(COMPONENT, {
             templateUrl: ["APP_CONST", function (APP_CONST) { return APP_CONST.filePath[ME]; }],
             bindings: {},
             controller: fn

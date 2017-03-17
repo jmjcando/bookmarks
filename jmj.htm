@@ -17,9 +17,9 @@
 
 <body ng-app="app">
 
-    <main-container></main-container>
+    <app-main-container></app-main-container>
 
-    <script type="text/ng-template" id="/maincontainer.tpl">
+    <script type="text/ng-template" id="/app-main-container.tpl">
         <menu is-old-version="$ctrl.isOldVersion" folders="$ctrl.folders"></menu>
         <content is-old-version="$ctrl.isOldVersion" folders="$ctrl.folders" folder-rows="$ctrl.folderRows"></content>
     </script>
