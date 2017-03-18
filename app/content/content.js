@@ -3,14 +3,15 @@
 
     "use strict";
 
-    var ME = "content";
+    var ME = "app-content";
+    var COMPONENT = "appContent";
 
     var extend = angular.extend,
         forEach = angular.forEach;
 
     /////////////////////////////////////////////
     angular.module("app")
-        .component(ME, {
+        .component(COMPONENT, {
             templateUrl: ["APP_CONST", function (APP_CONST) { return APP_CONST.filePath[ME]; }],
             bindings: {
                 isOldVersion: '<',

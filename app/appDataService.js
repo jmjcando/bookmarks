@@ -2,14 +2,15 @@
 
     "use strict";
 
-    var ME = 'dataService';
+    var ME = 'app-data-service';
+    var SERVICE = 'appDataService';
 
     angular.module('app')
-        .service(ME, fn);
+        .service(SERVICE, appDataService);
 
     ////////////////////////////////////////////////////
-    fn.$inject = ['$location', '$log', '$routeParams', 'APP_CONST'];
-    function fn($location, $log, $routeParams, APP_CONST) {
+    appDataService.$inject = ['$location', '$log', '$routeParams', 'APP_CONST'];
+    function appDataService($location, $log, $routeParams, APP_CONST) {
 
         $log.log (ME, $routeParams);
         var service = this;

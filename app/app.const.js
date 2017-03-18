@@ -12,8 +12,8 @@
     ////////////////////////////////////////////
     function getFilePath() {
         return {
-            menu: '/menu.tpl',
-            content: '/content.tpl',
+            "app-menu": '/app-menu.tpl',
+            "app-content": '/app-content.tpl',
             "app-main-container": '/app-main-container.tpl',
         };
     }

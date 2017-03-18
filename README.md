@@ -1,6 +1,5 @@
 Not yet very good markdown
 
-Visual Studio Code is used, so all files in the folder tree are used. bookmarks.sln (Visual studio) is not up-to-date and not used anymore.
 
 # Links:
 - http://jmjcando.github.com/Bookmarks  MaheshJ  
@@ -16,4 +15,5 @@ Visual Studio Code is used, so all files in the folder tree are used. bookmarks.
 
 # NOTE:
 - For issues refer to github repository https://github.com/jmjcando/bookmarks/issues
-- This is better handle in Visual studio code rather than Visual studio.
+- Visual Studio Code is used, so all files in the folder tree are used. bookmarks.sln (Visual studio) is not up-to-date and not used anymore. If Visul studio is used then open folder as web-site.
+- This is better handled in Visual studio code rather than Visual studio.

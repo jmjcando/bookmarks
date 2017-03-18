@@ -3,7 +3,8 @@
 
     "use strict";
 
-    var ME = "menu";
+    var ME = "app-menu";
+    var COMPONENT = 'appMenu';
 
     var extend = angular.extend,
         forEach = angular.forEach;
@@ -11,7 +12,7 @@
 
     /////////////////////////////////////////////
     angular.module("app")
-        .component(ME, {
+        .component(COMPONENT, {
             templateUrl: ["APP_CONST", function (APP_CONST) { return APP_CONST.filePath[ME]; }],
             bindings: {
                 isOldVersion: '<',
