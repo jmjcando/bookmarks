@@ -12,7 +12,7 @@
     /////////////////////////////////////////////
     angular.module("app")
         .component(COMPONENT, {
-            templateUrl: ["APP_CONST", function (APP_CONST) { return APP_CONST.filePath[ME]; }],
+            templateUrl: ["appFilePathConst", function (appFilePathConst) { return appFilePathConst[ME]; }],
             bindings: {
                 isOldVersion: '<',
                 folders: '<',

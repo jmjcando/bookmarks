@@ -9,8 +9,8 @@
         .service(SERVICE, appDataService);
 
     ////////////////////////////////////////////////////
-    appDataService.$inject = ['$location', '$log', '$routeParams', 'APP_CONST'];
-    function appDataService($location, $log, $routeParams, APP_CONST) {
+    appDataService.$inject = ['$location', '$log', '$routeParams', "appDataConst", 'appMockDataConst'];
+    function appDataService($location, $log, $routeParams, appDataConst, appMockDataConst) {
 
         $log.log (ME, $routeParams);
         var service = this;
@@ -35,7 +35,7 @@
 
         //********************
         function getData() {
-            var _d = APP_CONST[isMockData ? 'mockData': 'data'];
+            var _d = isMockData ? appMockDataConst: appDataConst;
             var data = angular.copy(_d);
             fixData(data);
             return data;
