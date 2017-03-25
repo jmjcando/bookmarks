@@ -9,7 +9,7 @@
         return {
             "app-menu": '/app-menu.tpl',
             "app-content": '/app-content.tpl',
-            "app-main-container": '/app-main-container.tpl',
+            "app-main-container": 'app/main-container/main-container.html',
         };
     }
 
