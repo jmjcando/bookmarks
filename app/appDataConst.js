@@ -72,19 +72,14 @@
             ]
         },
         {
-            title: "AQ",
+            title: "Biz",
             bkmrks:
             [
-                { title: "Google Docs", url: "https://spreadsheets.google.com/ccc?key=pM4e6yMY_eKSgBTtXI_UmTg&amp;hl=en" },
-                { type: 'separator' },
                 { title: "BoA", url: "http://www.bankofamerica.com" },
-                { title: "Chase", url: "https://www.chase.com" },
-                { type: 'separator' },
-                { title: "TR psw", url: "https://troweprice.com/psw" },
-                { title: "Vng small biz", url: "https://smallbiz.vanguard.com/" },
+                { title: "PNC", url: "https://www.pncbank.com" },
                 { type: 'separator' },
                 { title: "Eftps", url: "https://www.eftps.com" },
-                { title: "Nj tax", url: "https://www1.state.nj.us/TYTR_BusinessFilings/jsp/common/Login.jsp?taxcode=45" },
+                { title: "NJ tax", url: "https://www1.state.nj.us/TYTR_BusinessFilings/jsp/common/Login.jsp?taxcode=45" },
             ]
         },
         {
@@ -173,25 +168,32 @@
                 { title: "translate: google", url: "http://translate.google.com/" },
                 { title: "transliterate: google", url: "http://www.google.com/transliterate" },
                 { title: "transliterate: ReadGuj", url: "http://www.readgujarati.com/gujtyping.php" },
-                { type: 'separator' },
-                { url: "spammotel.com" },
-                { url: "freepops.org", note: "supports webmails." },
-                { url: "webmail.mozdev.org", note: "Thunderbird extension (to access Hotmail, yahoo on desktop)" }
             ]
         },
         {
-            title: "Tech",
+            title: "Tech - angular",
             bkmrks:
             [
                 { title: 'Google JavaScript Style Guide', url: 'https://google.github.io/styleguide/javascriptguide.xml' },
                 { title: 'angularjs - changelog', url: 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md' },
                 { title: 'angularjs - Migrating a newer version', url: 'https://docs.angularjs.org/guide/migration' },
                 { type: 'separator' },
-
+            ],
+        },
+        {
+            title: "Tech - markdown",
+            bkmrks:
+            [
                 { title: 'markdown - github', url: 'https://help.github.com/articles/basic-writing-and-formatting-syntax/' },
                 { title: 'markdown - Daring Fireball', url: 'http://daringfireball.net/projects/markdown' },
                 { title: 'markdown - Visual studio', url: 'https://www.visualstudio.com/en-us/docs/reference/markdown-guidance' },
                 { type: 'separator' },
+            ],
+        },
+        {
+            title: "Tech",
+            bkmrks:
+            [
 
                 { title: "daniel moth", url: "http://www.danielmoth.com", note: ".Net" },
                 { title: "Top 10 things VS2008", url: "http://www.danielmoth.com/Blog/2007/11/top-10-things-to-know-about-visual.html" },
