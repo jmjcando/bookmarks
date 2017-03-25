@@ -1,0 +1,33 @@
+<div ng-if="!$ctrl.isOldVersion" class="container-fluid">
+
+    <div class="row" ng-repeat="row in $ctrl.folderRows">
+        <div class="col-xs-2 list-group" ng-repeat="folder in row">
+            <div id="bk_{{folder.title}}" class="app-folder-header"></div>
+            <div class="list-group-item active">{{folder.title}}</div>
+
+            <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
+                <!--<text ng-switch-when="separator">&nbsp;</text>-->
+                <a class="list-group-item list-group-item-warning" ng-switch-when="separator" href=""></a>
+                <a class="list-group-item list-group-item-heading list-group-item-info" ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                <a class="list-group-item list-group-item-info" ng-switch-default ng-href='{{bookmark.url}}'>
+                    <span class="list-group-item-heading"> {{bookmark.title}}</span>
+                    <span ng-if="bookmark.note" class="bkmrk-note list-group-item-text">{{bookmark.note}}</span>
+                </a>
+            </ng-repeat>
+
+        </div>
+    </div>
+</div>
+
+
+<div ng-if="$ctrl.isOldVersion" class="bkmrk-folder" ng-repeat="folder in $ctrl.folders">
+    <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
+    <ul class="bkmrk-folder-body">
+        <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
+            <text ng-switch-when="separator">&nbsp;</text>
+            <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+            <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
+            <span ng-if="bookmark.note" class="bkmrk-note">{{bookmark.note}}</span>
+        </li>
+    </ul>
+</div>

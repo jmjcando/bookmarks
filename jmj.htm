@@ -17,94 +17,7 @@
 
 <body ng-app="app">
 
-    <app-main-container></app-main-container>
-
-    <script type="text/ng-template" id="/app-menu.tpl">
-        <!-- refer 
-            http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
-            http://www.w3schools.com/howto/howto_js_sidenav.asp 
-
-            todo: to use navbar of BS
-            http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_dropdown&stacked=h
-        -->
-
-        <nav  ng-if="!$ctrl.isOldVersion" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#">JayeshMJ Favs</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        Menu<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu app-scrollable-menu">
-                        <li>
-                            <a ng-repeat="folder in $ctrl.folders"
-                            class="bg-success"
-                                href="#bk_{{folder.title}}" target="_self">
-                                {{folder.title}}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div ng-if="$ctrl.isOldVersion" class="bkmrk-menu">
-            <div class="bkmrk-menu-header">
-                MENU
-                <span ng-show="$ctrl.isOldVersion">(old)</span>
-            </div>
-            <ul>
-                <li ng-repeat="folder in $ctrl.folders">
-                    <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
-                </li>
-            </ul>
-        </div>
-    </script>
-
-    <script type="text/ng-template" id="/app-content.tpl">
-        <div ng-if="!$ctrl.isOldVersion" class="container-fluid">
-
-            <div class="row" ng-repeat="row in $ctrl.folderRows">
-                <div class="col-xs-2 list-group" ng-repeat="folder in row">
-                    <div id="bk_{{folder.title}}" class="app-folder-header"></div>
-                    <div class="list-group-item active">{{folder.title}}</div>
-
-                    <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
-                        <!--<text ng-switch-when="separator">&nbsp;</text>-->
-                        <a class="list-group-item list-group-item-warning" ng-switch-when="separator" href=""></a>
-                        <a class="list-group-item list-group-item-heading list-group-item-info" ng-switch-when="multi-urls" 
-                            href="" 
-                            ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                        <a class="list-group-item list-group-item-info" 
-                            ng-switch-default 
-                            ng-href='{{bookmark.url}}'>
-                                <span class="list-group-item-heading"> {{bookmark.title}}</span>
-                                <span ng-if="bookmark.note" class="bkmrk-note list-group-item-text">{{bookmark.note}}</span>
-                        </a>
-                    </ng-repeat>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div ng-if="$ctrl.isOldVersion" class="bkmrk-folder" ng-repeat="folder in $ctrl.folders">
-            <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
-            <ul class="bkmrk-folder-body">
-                <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
-                    <text ng-switch-when="separator">&nbsp;</text>
-                    <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                    <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
-                    <span ng-if="bookmark.note" class="bkmrk-note">{{bookmark.note}}</span>
-                </li>
-            </ul>
-        </div>
-
-    </script>
+    <app-container></app-container>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -119,7 +32,7 @@
     <script src="app/appMockDataConst.js"></script>
     <script src="app/menu/menu.js"></script>
     <script src="app/content/content.js"></script>
-    <script src="app/main-container/main-container.js"></script>
+    <script src="app/container/container.js"></script>
 
 </body>
 
