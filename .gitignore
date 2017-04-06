@@ -26,7 +26,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -43,3 +44,26 @@ Temporary Items
 .apdisk
 *.suo
 /.vs/config/applicationhost.config
+
+/bower_components/angular/*
+!/bower_components/angular/angular*.*
+
+/bower_components/angular-route/*
+!/bower_components/angular-route/angular*
+
+/bower_components/angular-mocks/*
+!/bower_components/angular-mocks/angular*
+
+/bower_components/bootstrap/*
+!/bower_components/bootstrap/dist
+
+/bower_components/jasmine-core/*
+!/bower_components/jasmine-core/lib
+/bower_components/jasmine-core/lib/*
+!/bower_components/jasmine-core/lib/jasmin-core
+
+/bower_components/jquery/*
+!/bower_components/jquery/dist
+
+
+
