@@ -191,6 +191,18 @@
             ],
         },
         {
+            title: "Tech - CDN",
+            bkmrks:
+            [
+                { title: 'maxcdn - cdn', url: 'https://www.maxcdn.com/open-source/' },
+                { title: 'cdnjs', url: 'https://cdnjs.com/libraries' },
+                { title: 'google - cdn', url: 'https://developers.google.com/speed/libraries/' },
+                { title: 'jquery - cdn', url: 'https://code.jquery.com' },
+                { title: 'microsoft - cdn', url: 'https://docs.microsoft.com/en-us/aspnet/ajax/cdn' },
+                { title: 'cdn hosts', url:'https://www.maxcdn.com/blog/free-open-source-cdns/'}
+                
+            ],
+        },        {
             title: "Tech",
             bkmrks:
             [
