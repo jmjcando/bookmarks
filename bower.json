@@ -13,19 +13,16 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.6.3",
-    "angular-mocks": "1.6.3",
-    "angular-route": "1.6.3",
+    "angular": "1.6.4",
+    "angular-mocks": "1.6.4",
+    "angular-route": "1.6.4",
     "bootstrap": "3.3.7",
     "jasmine-core": "^2.5.2",
-    "jquery": "2.2.4"
+    "jquery": "3.2.1"
   },
   "description": "bookmarks for jmj and mjj",
   "main": "",
   "moduleType": [],
   "homepage": "",
-  "private": true,
-  "resolutions": {
-    "jquery": "2.2.4"
-  }
+  "private": true
 }
