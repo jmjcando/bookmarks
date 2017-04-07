@@ -16,7 +16,8 @@
   - **data=mock** uses mockdata
 
 ## NOTE:
-- Use http-server (installed via node) to run on local machine (development) on command-line 
+- Use http-server (installed via node) to run on local machine (development) on command-line.
+Run on parent folder (that's how it is served by github), so all relative paths are tested well.
     ```
       http-server
     ```
