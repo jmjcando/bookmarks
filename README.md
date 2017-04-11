@@ -14,6 +14,7 @@
 - query-string:  
   - **version=old** shows old version (non--bootstrap)
   - **data=mock** uses mockdata
+  - must use # for angularjs to capture query-strings. e.g. http://127.0.0.1:8080/bookmarks/jmj.htm#!?version=old&data=mock
 
 ## NOTE:
 - Use http-server (installed via node) to run on local machine (development) on command-line.
