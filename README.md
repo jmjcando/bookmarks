@@ -6,13 +6,16 @@
 ## Links:
 - http://jmjcando.github.com/Bookmarks  MaheshJ  
 - http://jmjcando.github.com/Bookmarks/jmj.htm  - Jayesh J  
-  - http://jmjcando.github.com/Bookmarks/jmj.htm?version=old  - Jayesh J (old)
-  - http://jmjcando.github.com/Bookmarks/jmj.htm?data=mock  - Jayesh J (mock data, useful for testing)
+  - http://jmjcando.github.com/Bookmarks/jmj.htm#!  - Jayesh J
+  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=two  - Jayesh J (old) bootstrap
+  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=one  - Jayesh J (old)
+  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?data=mock  - Jayesh J (mock data, useful for testing)
 
 
 ## Features:
 - query-string:  
-  - **version=two** (default) shows bootstrap version
+  - **version=three** (default) shows bootstrap and dt/dd version
+  - **version=two** shows bootstrap version
   - **version=one** shows old version (non--bootstrap)
   - **data=mock** uses mockdata
   - must use # for angularjs to capture query-strings. e.g. http://127.0.0.1:8080/bookmarks/jmj.htm#!?version=one&data=mock

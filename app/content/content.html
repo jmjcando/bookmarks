@@ -34,4 +34,28 @@
         </ul>
     </div>
 
+    <div ng-switch-default class="container-fluid app-3-content">
+        <dl class="dl-horizontal">
+            <ng-repeat ng-repeat="folder in $ctrl.folders">
+                <dt id="bk_{{folder.title}}" class="text-danger">
+                    {{folder.title}}
+                </dt>
+                <dd>
+                    <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
+                        <!--({{$index+1}})-->
+                        <text ng-switch-when="separator">&nbsp;</text>
+                        <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                        <a ng-switch-default ng-href="{{bookmark.url}}">
+                            {{bookmark.title}}
+                        </a>
+                        <span ng-if="bookmark.note" class="text-muted" ng-bind="bookmark.note" />
+                    </ng-repeat>
+                </dd>
+            </ng-repeat>
+        </dl>
+    </div>
+
+
+
+
 </ng-switch>

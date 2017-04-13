@@ -7,7 +7,20 @@
         -->
 <ng-switch on="$ctrl.version">
 
-    <nav ng-switch-when="two" class="navbar navbar-inverse navbar-fixed-top">
+
+    <div ng-switch-when="one" class="bkmrk-menu">
+        <div class="bkmrk-menu-header">
+            MENU
+            <span ng-show="$ctrl.isOldVersion">(old)</span>
+        </div>
+        <ul>
+            <li ng-repeat="folder in $ctrl.folders">
+                <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <nav ng-switch-default class="navbar navbar-inverse navbar-fixed-top app-3-menu">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">JayeshMJ Favs</a>
@@ -28,17 +41,5 @@
             </ul>
         </div>
     </nav>
-
-    <div ng-switch-when="one" class="bkmrk-menu">
-        <div class="bkmrk-menu-header">
-            MENU
-            <span ng-show="$ctrl.isOldVersion">(old)</span>
-        </div>
-        <ul>
-            <li ng-repeat="folder in $ctrl.folders">
-                <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
-            </li>
-        </ul>
-    </div>
 
 </ng-switch>

@@ -9,7 +9,7 @@
     function getData() {
 
         return [{
-            "title": "FAV-1",
+            "title": "Fav-1",
             bkmrks: [
                 { title: "Gmail", url: "https://gmail.com" },
                 { title: "Gmail contacts", url: "https://mail.google.com/mail/#contacts" },
@@ -35,7 +35,7 @@
 
             ]
         }, {
-            title: "FAV-2",
+            title: "Fav-2",
             bkmrks: [
                 { title: "Timesheet - Nat - div1", url: "https://www.forumsolutionsgroup.com/" },
                 { title: "adp - div1", url: "myaccess.adp.com" },
@@ -135,13 +135,13 @@
             ]
         },
         {
-            title: "savings rates",
+            title: "Savings Rates",
             bkmrks:
             [
                 { title: "mymoneyblog: online savings comp", url: "http://www.mymoneyblog.com/online-savings-accounts-and-comparisons" },
                 { title: "bankrate.com: MMA", url: "http://www.bankrate.com/brm/rate/mmmf_highratehome.asp?params=US,416&amp;product=33&amp;sort=2" },
                 { title: "bankrate.com: CD", url: "http://www.bankrate.com/funnel/cd-investments/cd-investment-results.aspx?local=false&amp;tab=CD&amp;prods=15" },
-                { title: "ibc Data - MMF comp", url: "http://www.ibcdata.com/mfs/toppers.htm" },
+                { title: "ibc Data: MMF comp", url: "http://www.ibcdata.com/mfs/toppers.htm" },
                 { title: "Bankrate: MMF-NonTaxable", url: "http://www.bankrate.com/brm/rate/mmmf_nontax.asp?prodtype=invest" },
                 { title: "Bankrate: MMF-Taxables", url: "http://www.bankrate.com/brm/rate/mmmf_tax.asp?prodtype=invest" },
                 { type: 'separator' },

@@ -16,7 +16,7 @@
         var service = this;
         
         var searchObj  = $location.search() || {};
-        searchObj.version = searchObj.version || 'two'; 
+        searchObj.version = searchObj.version || 'three'; 
         searchObj.data = searchObj.data || ''; 
         $log.log (ME, 'searchObj', searchObj);
 
