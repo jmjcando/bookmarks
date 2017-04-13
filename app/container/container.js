@@ -20,7 +20,7 @@
         var ctrl = this;
 
         angular.extend(ctrl, {
-            isOldVersion: appDataService.isOldVersion,
+            version: appDataService.version,
             folders: appDataService.data,
             folderRows: appDataService.dataRows,
             

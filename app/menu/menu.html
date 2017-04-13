@@ -5,37 +5,40 @@
             todo: to use navbar of BS
             http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_dropdown&stacked=h
         -->
+<ng-switch on="$ctrl.version">
 
-<nav ng-if="!$ctrl.isOldVersion" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">JayeshMJ Favs</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <nav ng-switch-when="two" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">JayeshMJ Favs</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         Menu<span class="caret"></span>
                     </a>
-                <ul class="dropdown-menu app-scrollable-menu">
-                    <li>
-                        <a ng-repeat="folder in $ctrl.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
+                    <ul class="dropdown-menu app-scrollable-menu">
+                        <li>
+                            <a ng-repeat="folder in $ctrl.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
                                 {{folder.title}}
                             </a>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-switch-when="one" class="bkmrk-menu">
+        <div class="bkmrk-menu-header">
+            MENU
+            <span ng-show="$ctrl.isOldVersion">(old)</span>
+        </div>
+        <ul>
+            <li ng-repeat="folder in $ctrl.folders">
+                <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
             </li>
         </ul>
     </div>
-</nav>
 
-<div ng-if="$ctrl.isOldVersion" class="bkmrk-menu">
-    <div class="bkmrk-menu-header">
-        MENU
-        <span ng-show="$ctrl.isOldVersion">(old)</span>
-    </div>
-    <ul>
-        <li ng-repeat="folder in $ctrl.folders">
-            <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
-        </li>
-    </ul>
-</div>
+</ng-switch>

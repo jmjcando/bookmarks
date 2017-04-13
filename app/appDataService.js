@@ -14,18 +14,20 @@
 
         $log.log (ME, $routeParams);
         var service = this;
-        var searchObject  = $location.search();
-        searchObject.version = searchObject.version || null; 
-        searchObject.data = searchObject.data || null; 
         
-        var isOldVersion = /old/i.test(searchObject.version);
-        var isMockData  = /mock/i.test(searchObject.data);
+        var searchObj  = $location.search() || {};
+        searchObj.version = searchObj.version || 'two'; 
+        searchObj.data = searchObj.data || ''; 
+        $log.log (ME, 'searchObj', searchObj);
+
+
+        var isMockData  = /mock/i.test(searchObj.data);
 
         var data = getData();
         var dataRows = getDataRows(data);
 
         angular.extend (service, {
-            isOldVersion: isOldVersion,
+            version: searchObj.version,
             data: data,
             dataRows: dataRows,
         });
@@ -100,7 +102,6 @@
 
 
     }
-
 
 
 }());

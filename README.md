@@ -12,9 +12,10 @@
 
 ## Features:
 - query-string:  
-  - **version=old** shows old version (non--bootstrap)
+  - **version=two** (default) shows bootstrap version
+  - **version=one** shows old version (non--bootstrap)
   - **data=mock** uses mockdata
-  - must use # for angularjs to capture query-strings. e.g. http://127.0.0.1:8080/bookmarks/jmj.htm#!?version=old&data=mock
+  - must use # for angularjs to capture query-strings. e.g. http://127.0.0.1:8080/bookmarks/jmj.htm#!?version=one&data=mock
 
 ## NOTE:
 - Use http-server (installed via node) to run on local machine (development) on command-line.

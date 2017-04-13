@@ -15,7 +15,7 @@
         .component(COMPONENT, {
             templateUrl: ["appFilePathConst", function (appFilePathConst) { return appFilePathConst[ME]; }],
             bindings: {
-                isOldVersion: '<',
+                version: '<',
                 folders: '<'
             },
             controller: fn
