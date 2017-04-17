@@ -64,14 +64,14 @@
                     {{folder.title}}
                 </dt>
                 <dd>
-                        <div ng-repeat="bookmark in folder.bkmrks | filter: {type: '!separator'} " ng-switch on="bookmark.type" class="col-xs-3" >
-                            <!--<text ng-switch-when="separator">&nbsp;</text>-->
-                            <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                            <a ng-switch-default ng-href="{{bookmark.url}}">
+                    <div ng-repeat="bookmark in folder.bkmrks | filter: {type: '!separator'} " ng-switch on="bookmark.type" class="col-xs-3">
+                        <!--<text ng-switch-when="separator">&nbsp;</text>-->
+                        <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                        <a ng-switch-default ng-href="{{bookmark.url}}">
                             {{bookmark.title}}
                         </a>
-                            <span ng-if="bookmark.note" class="text-muted" ng-bind="bookmark.note" />
-                        </div>
+                        <em><span ng-if="bookmark.note" class="small text-muted" ng-bind="bookmark.note" /></em>
+                    </div>
                     <!--<ul class="list-unstyled">
                         <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
                             <text ng-switch-when="separator">&nbsp;</text>

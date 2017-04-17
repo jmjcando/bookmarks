@@ -134,13 +134,14 @@ li.separator {
 }
 
 
-.app-3-content dd * {
+
+/*.app-3-content dd * {
     margin-right: 0.5em;
 }
 
 .app-3-content dd a {
     text-decoration: underline;
-}
+}*/
 
 .app-3-menu {
     font-variant: small-caps;
