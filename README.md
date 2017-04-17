@@ -5,9 +5,8 @@
 
 ## Links:
 - http://jmjcando.github.com/Bookmarks  MaheshJ  
-- http://jmjcando.github.com/Bookmarks/jmj.htm  - Jayesh J  
-  - http://jmjcando.github.com/Bookmarks/jmj.htm#!  - Jayesh J
-  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=two  - Jayesh J (old) bootstrap
+- http://jmjcando.github.com/Bookmarks/jmj.htm#! (or version=three)  - Jayesh J  
+  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=two  - Jayesh J (old bootstrap / panel)
   - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=one  - Jayesh J (old)
   - http://jmjcando.github.com/Bookmarks/jmj.htm#!?data=mock  - Jayesh J (mock data, useful for testing)
 
