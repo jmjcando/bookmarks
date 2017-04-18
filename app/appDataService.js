@@ -9,10 +9,9 @@
         .service(SERVICE, appDataService);
 
     ////////////////////////////////////////////////////
-    appDataService.$inject = ['$location', '$log', '$routeParams', "appDataConst", 'appMockDataConst'];
-    function appDataService($location, $log, $routeParams, appDataConst, appMockDataConst) {
+    appDataService.$inject = ['$location', '$log',  "appDataConst", 'appMockDataConst'];
+    function appDataService($location, $log,  appDataConst, appMockDataConst) {
 
-        $log.log (ME, $routeParams);
         var service = this;
         
         var searchObj  = $location.search() || {};

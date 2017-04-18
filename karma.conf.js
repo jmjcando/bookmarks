@@ -1,13 +1,13 @@
 module.exports = function (config) {
     config.set({
 
-        basePath: './js/',
+        basePath: './app/',
 
         files: [
-            "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js",
-            "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-mocks.js",
+            "./../lib/angular/angular.min.js",
+            "./../lib/angular/angular-mocks.js",
 
-            "BookmarkApp.js",
+            "App.js",
             "*.js",
         ],
 
