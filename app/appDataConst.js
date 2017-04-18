@@ -177,7 +177,7 @@
                 { title: 'Google JavaScript Style Guide', url: 'https://google.github.io/styleguide/javascriptguide.xml' },
                 { title: 'angularjs - changelog', url: 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md' },
                 { title: 'angularjs - Migrating a newer version', url: 'https://docs.angularjs.org/guide/migration' },
-                { type: 'separator' },
+                { title: 'angularjs - all versions', url: 'https://code.angularjs.org/' },
             ],
         },
         {
