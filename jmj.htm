@@ -19,17 +19,39 @@
     <app-container></app-container>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>!window.jQuery && document.write('<script src="lib/jquery/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript">
+        if (window.jQuery) {
+            console.log ('jQuery cdn - YES');
+        } else {
+            console.log ('jQuery cdn - NO');
+            document.write('<script src="lib/jquery/jquery.min.js"><\/script>');
+        }
+    </script>
 
-    <script src="lib/bootstrap/js/bootstrap.min.js" ></script>
 
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        if($.fn.modal) {
+            console.log ('bootstrap cdn - YES');
+        } else {
+            console.log ('bootstrap cdn - NO');
+            document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
+        }
+    </script>
 
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+    <script type="text/javascript">
+        if (window.angular) {
+            console.log ('angular cdn - YES');
+        } else {
+            console.log ('angular cdn - NO');
+            document.write('<script src="lib/angular/angular.min.js"><\/script>');
+            document.write('<script src="lib/angular/angular-route.min.js"><\/script>');
+        }
+    </script>
+
 
     <script src="app/app.js"></script>
     <script src="app/appDataService.js"></script>
@@ -39,7 +61,6 @@
     <script src="app/menu/menu.js"></script>
     <script src="app/content/content.js"></script>
     <script src="app/container/container.js"></script>
-
 </body>
 
 </html>
