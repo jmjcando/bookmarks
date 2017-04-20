@@ -1,6 +1,4 @@
 {
-    "index": "./jmj.htm",
-    "server": {
-        "index": "./jmj.htm"
-        }
+"browser": ["\"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\"", "Google Chrome","firefox"],
+"https": true 
 }
