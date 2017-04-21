@@ -10,7 +10,7 @@
         return [{
             "title": "Fav-1",
             bkmrks: [
-                { type: 'multi-urls', title: "open-all", urls: ["nohttp.com", "http://www.yahoo.com"] },
+                { type: 'multi-urls', title: "open-all", urls: ["http://google.com", "http://www.yahoo.com"] },
                 { title: "Gmail", url: "https://gmail.com" },
                 { title: "NO http google", url: "google.com" },
                 { url: "no-title.com" },

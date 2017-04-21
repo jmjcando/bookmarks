@@ -36,8 +36,9 @@
 
         ///////////////////////////
         function openMultiUrls (urls) {
+            $log.debug(ME, 'openMultiUrls', urls);
             angular.forEach(urls, function (value) {
-                $window.open(value);
+                $window.open(value, value);
             });
         };
 
