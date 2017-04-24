@@ -1,4 +1,5 @@
 {
 "browser": ["\"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\"", "Google Chrome","firefox"],
+"files" : ["./app/**/*"],
 "https": true 
 }

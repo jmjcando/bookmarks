@@ -8,6 +8,7 @@
     angular.module('app')
         .service(SERVICE, appDataService);
 
+
     ////////////////////////////////////////////////////
     appDataService.$inject = ['$location', '$log',  "appDataConst", 'appMockDataConst'];
     function appDataService($location, $log,  appDataConst, appMockDataConst) {
@@ -18,7 +19,6 @@
         searchObj.version = searchObj.version || 'three'; 
         searchObj.data = searchObj.data || ''; 
         $log.log (ME, 'searchObj', searchObj);
-
 
         var isMockData  = /mock/i.test(searchObj.data);
 
@@ -41,6 +41,7 @@
             fixData(data);
             return data;
         }
+
 
         //********************
         function getDataRows(data, columns) {
