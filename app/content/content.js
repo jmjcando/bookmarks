@@ -37,8 +37,8 @@
         ///////////////////////////
         function openMultiUrls (urls) {
             $log.debug(ME, 'openMultiUrls', urls);
-            angular.forEach(urls, function (value) {
-                $window.open(value, value);
+            angular.forEach(urls, function (value, key) {
+                $window.open(value, 'win' + key); // ok in FF, notok chrome
             });
         };
 
