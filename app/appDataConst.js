@@ -158,9 +158,10 @@
             ]
         },
         {
-            title: "Tech Util",
+            title: "Tech / Utility",
             bkmrks:
             [
+                { title: "freeformatter.com", url: "http://www.freeformatter.com/" },
                 { title: "Video to mp3", url: "www.vidtomp3.com" },
                 { title: "Large Files", url: "transferbigfiles.com" },
                 { title: "Large Files", url: "FileXpressit.com" },
@@ -171,7 +172,7 @@
             ]
         },
         {
-            title: "Tech - angularjs",
+            title: "Tech / angularjs",
             bkmrks:
             [
                 { title: 'Google JavaScript Style Guide', url: 'https://google.github.io/styleguide/javascriptguide.xml' },
@@ -181,7 +182,24 @@
             ],
         },
         {
-            title: "Tech - markdown",
+            title: "Tech / Kendo - Telerik",
+            bkmrks:
+            [
+                { title: 'charts overview', url: 'http://docs.telerik.com/kendo-ui/controls/charts/overview' },
+                { title: 'charts api', url: 'http://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart' },
+            ],
+        },
+        {
+            title: "Tech / Web",
+            bkmrks:
+            [
+                { title: 'JavaScript / w3 schools', url: 'https://www.w3schools.com/js/' },
+                { title: 'JavaScript / Mozila', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+                { title: 'css / w3', url: 'https://www.w3schools.com/css/' },
+            ],
+        },
+        {
+            title: "Tech / markdown",
             bkmrks:
             [
                 { title: 'markdown - github', url: 'https://help.github.com/articles/basic-writing-and-formatting-syntax/' },
@@ -190,7 +208,7 @@
                 { type: 'separator' },
             ],
         }, {
-            title: "Tech - cdn",
+            title: "Tech / cdn",
             bkmrks:
             [
                 { title: 'maxcdn - cdn', url: 'https://www.maxcdn.com/open-source/' },
@@ -213,7 +231,7 @@
             title: "Tech",
             bkmrks:
             [
-
+                { title:'automapper', url: 'https://github.com/AutoMapper/AutoMapper'},
                 { title: "daniel moth", url: "http://www.danielmoth.com", note: ".Net" },
                 { title: "Top 10 things VS2008", url: "http://www.danielmoth.com/Blog/2007/11/top-10-things-to-know-about-visual.html" },
                 { title: "Aqua Studio (4.7.2) docs", url: "http://docs.aquafold.com/ads/4.7/" },
