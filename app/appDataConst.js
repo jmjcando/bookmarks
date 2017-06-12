@@ -191,11 +191,16 @@
         },
         {
             title: "Tech / Web",
-            bkmrks:
-            [
+            bkmrks: [
                 { title: 'JavaScript / w3 schools', url: 'https://www.w3schools.com/js/' },
                 { title: 'JavaScript / Mozila', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
                 { title: 'css / w3', url: 'https://www.w3schools.com/css/' },
+            ],
+        },
+        {
+            title: "Tech / PowerShell",
+            bkmrks: [
+                { title: 'PowerShell- MSDN', url: 'https://msdn.microsoft.com/en-us/library/dd835506(v=vs.85).aspx' },
             ],
         },
         {
