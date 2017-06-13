@@ -43,4 +43,3 @@
 - **Visul studio** if used then open folder as web-site. bookmarks.sln (Visual studio) is not up-to-date and not used anymore. 
 
 - **angularjs unit test:** all tests files need to be reviwed.
-
