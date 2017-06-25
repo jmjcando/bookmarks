@@ -107,15 +107,14 @@
                 { title: "TR", url: "https://troweprice.com" },
                 { title: "vng", url: "https://www.vanguard.com" },
             ]
-        },
-        {
+        }, {
             title: "PJ - Utility",
-            bkmrks:
-            [
+            bkmrks: [
                 { title: "At&T", url: "https://www.attwireless.com" },
                 { title: "AllVoi", url: "https://account.allvoi.com" },
                 { title: "Liberty mutual", url: "http://www.libertymutual.com" },
-                { title: "Optimum Online", url: "http://www.optimum.com/account/" }
+                { title: "Optimum Online", url: "http://www.optimum.com/account/" },
+                { title: "Edison - water", url: "https://myh2o-le.utilitiesbp.com" }
             ]
         },
         {
@@ -231,7 +230,7 @@
             title: "Tech",
             bkmrks:
             [
-                { title:'automapper', url: 'https://github.com/AutoMapper/AutoMapper'},
+                { title: 'automapper', url: 'https://github.com/AutoMapper/AutoMapper' },
                 { title: "daniel moth", url: "http://www.danielmoth.com", note: ".Net" },
                 { title: "Top 10 things VS2008", url: "http://www.danielmoth.com/Blog/2007/11/top-10-things-to-know-about-visual.html" },
                 { title: "Aqua Studio (4.7.2) docs", url: "http://docs.aquafold.com/ads/4.7/" },
