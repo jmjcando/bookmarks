@@ -168,6 +168,8 @@
                 { title: "translate: google", url: "http://translate.google.com/" },
                 { title: "transliterate: google", url: "http://www.google.com/transliterate" },
                 { title: "transliterate: ReadGuj", url: "http://www.readgujarati.com/gujtyping.php" },
+                { title: "chrome - offline install", url: "https://www.google.com/chrome/browser/desktop/index.html?system=true&standalone=1" },
+                { title: "chrome - offline install INFO", url: "https://support.google.com/chrome/answer/126299?hl=en" },
             ]
         },
         {
