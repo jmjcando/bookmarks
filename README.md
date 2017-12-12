@@ -4,11 +4,11 @@
   - [Note](#note)
 
 ## Links:
-- Mahesh: http://jmjcando.github.com/Bookmarks (optional index.htm)
-- Jayesh: http://jmjcando.github.com/Bookmarks/jmj.htm#! (optional version=three)
-  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=two  - Jayesh J (old bootstrap / panel)
-  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?version=one  - Jayesh J (old)
-  - http://jmjcando.github.com/Bookmarks/jmj.htm#!?data=mock  - Jayesh J (mock data, useful for testing)
+- Mahesh: http://jmjcando.github.com/bookmarks (optional index.htm)
+- Jayesh: http://jmjcando.github.com/bookmarks/jmj.htm#! (optional version=three)
+  - http://jmjcando.github.com/bookmarks/jmj.htm#!?version=two  - Jayesh J (old bootstrap / panel)
+  - http://jmjcando.github.com/bookmarks/jmj.htm#!?version=one  - Jayesh J (old)
+  - http://jmjcando.github.com/bookmarks/jmj.htm#!?data=mock  - Jayesh J (mock data, useful for testing)
 
 
 ## Features:
