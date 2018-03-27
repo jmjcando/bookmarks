@@ -89,10 +89,10 @@
                 { title: "TD", url: "https://onlinebanking.tdbank.com/" },
                 { title: "Genisys", url: "https://www.genisyscu.org/" },
                 { type: 'separator' },
-                { title: "Ally", url: "https://secure.ally.com/allyWebClient/login.do" },
-                { title: "Amex", url: "http://personalsavings.americanexpress.com/?inav=footer_personal_savings" },
-                { title: "CapitalOne 360", url: "https://secure.capitalone360.com/myaccount/banking/login.vm" },
-                { title: "Discover", url: "https://www.discoverbank.com/bankac/loginreg/login" },
+                { title: "Ally", url: "https://secure.ally.com/" },
+                { title: "Amex", url: "http://personalsavings.americanexpress.com" },
+                { title: "Discover", url: "https://www.discover.com/online-banking" },
+                { title: "Optum", url: "https://cdhaccount.optum.com" },
             ]
         },
         {
