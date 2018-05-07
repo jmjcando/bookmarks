@@ -3,8 +3,8 @@
 
     "use strict";
 
-    var ME = "app-content";
-    var COMPONENT = "appContent";
+    var ME = "app-content-two";
+    var COMPONENT = "appContentTwo";
 
     var extend = angular.extend,
         forEach = angular.forEach;

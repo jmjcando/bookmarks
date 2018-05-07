@@ -1,4 +1,19 @@
 
-<app-menu version="$ctrl.version" folders="$ctrl.folders"></app-menu>
-<app-content version="$ctrl.version" folders="$ctrl.folders" folder-rows="$ctrl.folderRows"></app-content>
+<ng-switch on="$ctrl.version">
+
+    <app-menu-one ng-switch-when="one" folders="$ctrl.folders"></app-menu-one>
+    <app-menu ng-switch-default folders="$ctrl.folders"></app-menu>
+
+
+</ng-switch>
+
+
+<ng-switch on="$ctrl.version">
+
+    <app-content-one ng-switch-when="one" folders="$ctrl.folders" folder-rows="$ctrl.folderRows"></app-content-one>
+    <app-content-two ng-switch-when="two" folders="$ctrl.folders" folder-rows="$ctrl.folderRows"></app-content-two>
+    <app-content ng-switch-default folders="$ctrl.folders" folder-rows="$ctrl.folderRows"></app-content>
+
+</ng-switch>
+
 

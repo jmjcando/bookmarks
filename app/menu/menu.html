@@ -1,45 +1,31 @@
-<!-- refer 
+<!-- refer
             http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
-            http://www.w3schools.com/howto/howto_js_sidenav.asp 
+            http://www.w3schools.com/howto/howto_js_sidenav.asp
 
             todo: to use navbar of BS
             http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_dropdown&stacked=h
         -->
-<ng-switch on="$ctrl.version">
 
 
-    <div ng-switch-when="one" class="bkmrk-menu">
-        <div class="bkmrk-menu-header">
-            MENU
-            <span ng-show="$ctrl.isOldVersion">(old)</span>
+<nav class="navbar navbar-inverse navbar-fixed-top app-3-menu">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">JayeshMJ Favs</a>
         </div>
-        <ul>
-            <li ng-repeat="folder in $ctrl.folders">
-                <a href="#bk_{{folder.title}}" target="_self">{{folder.title}}</a>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Menu<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu app-scrollable-menu">
+                    <li>
+                        <a ng-repeat="folder in $ctrl.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
+                            {{folder.title}}
+                        </a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
+</nav>
 
-    <nav ng-switch-default class="navbar navbar-inverse navbar-fixed-top app-3-menu">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">JayeshMJ Favs</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        Menu<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu app-scrollable-menu">
-                        <li>
-                            <a ng-repeat="folder in $ctrl.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
-                                {{folder.title}}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-</ng-switch>

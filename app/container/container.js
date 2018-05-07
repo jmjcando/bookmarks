@@ -22,7 +22,7 @@
         angular.extend(ctrl, {
             version: appDataService.version,
             folders: appDataService.data,
-            folderRows: appDataService.dataRows,
+            folderRows: appDataService.dataRows
             
         });
 

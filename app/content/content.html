@@ -1,92 +1,34 @@
-<ng-switch on="$ctrl.version">
 
-    <div ng-switch-when="two" class="container-fluid">
 
-        <div class="row" ng-repeat="row in $ctrl.folderRows">
-            <div class="col-xs-2 list-group" ng-repeat="folder in row">
-                <div id="bk_{{folder.title}}" class="app-folder-header"></div>
-                <div class="list-group-item active">{{folder.title}}</div>
-
-                <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
+<div class="zcontainer-fluid app-3-content">
+    <dl class="dl-horizontal">
+        <ng-repeat ng-repeat="folder in $ctrl.folders">
+            <br />
+            <dt id="bk_{{folder.title}}" class="text-danger">
+                {{folder.title}}
+            </dt>
+            <dd>
+                <div ng-repeat="bookmark in folder.bkmrks | filter: {type: '!separator'} " ng-switch on="bookmark.type" class="col-xs-3">
                     <!--<text ng-switch-when="separator">&nbsp;</text>-->
-                    <a class="list-group-item list-group-item-warning" ng-switch-when="separator" href=""></a>
-                    <a class="list-group-item list-group-item-heading list-group-item-info" ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                    <a class="list-group-item list-group-item-info" ng-switch-default ng-href='{{bookmark.url}}'>
-                        <span class="list-group-item-heading"> {{bookmark.title}}</span>
-                        <span ng-if="bookmark.note" class="bkmrk-note list-group-item-text">{{bookmark.note}}</span>
+                    <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+                    <a ng-switch-default ng-href="{{bookmark.url}}">
+                        {{bookmark.title}}
                     </a>
-                </ng-repeat>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div ng-switch-when="one" class="bkmrk-folder" ng-repeat="folder in $ctrl.folders">
-        <div id="bk_{{folder.title}}" class="bkmrk-folder-header">{{folder.title}}</div>
-        <ul class="bkmrk-folder-body">
-            <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type" class="{{bookmark.type}}">
-                <text ng-switch-when="separator">&nbsp;</text>
-                <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                <a ng-switch-default ng-href='{{bookmark.url}}'>{{bookmark.title}}</a>
-                <span ng-if="bookmark.note" class="bkmrk-note">{{bookmark.note}}</span>
-            </li>
-        </ul>
-    </div>
-
-    <!--<div ng-switch-default class="container-fluid app-3-content">
-        <dl class="dl-horizontal">
-            <ng-repeat ng-repeat="folder in $ctrl.folders">
-                <dd id="bk_{{folder.title}}" class="text-danger">
-                    {{folder.title}}
-                </dd>
-                <ng-repeat ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
-                    <dt>{{bookmark.title}}</dt>
-                    <dd>
+                    <em><span ng-if="bookmark.note" class="small text-muted" ng-bind="bookmark.note" /></em>
+                </div>
+                <!--<ul class="list-unstyled">
+                    <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
                         <text ng-switch-when="separator">&nbsp;</text>
-                        <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);"></a>
-                        <a ng-switch-default ng-href="{{bookmark.url}}">
-                            {{bookmark.url}}
-                        </a>
-                        <span ng-if="bookmark.note" class="text-muted" ng-bind="bookmark.note" />
-                    </dd>
-                </ng-repeat>
-            </ng-repeat>
-        </dl>
-    </div>
--->
-
-    <div ng-switch-default class="zcontainer-fluid app-3-content">
-        <dl class="dl-horizontal">
-            <ng-repeat ng-repeat="folder in $ctrl.folders">
-                <br />
-                <dt id="bk_{{folder.title}}" class="text-danger">
-                    {{folder.title}}
-                </dt>
-                <dd>
-                    <div ng-repeat="bookmark in folder.bkmrks | filter: {type: '!separator'} " ng-switch on="bookmark.type" class="col-xs-3">
-                        <!--<text ng-switch-when="separator">&nbsp;</text>-->
                         <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
                         <a ng-switch-default ng-href="{{bookmark.url}}">
-                            {{bookmark.title}}
-                        </a>
-                        <em><span ng-if="bookmark.note" class="small text-muted" ng-bind="bookmark.note" /></em>
-                    </div>
-                    <!--<ul class="list-unstyled">
-                        <li ng-repeat="bookmark in folder.bkmrks" ng-switch on="bookmark.type">
-                            <text ng-switch-when="separator">&nbsp;</text>
-                            <a ng-switch-when="multi-urls" href="" ng-click="$ctrl.openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-                            <a ng-switch-default ng-href="{{bookmark.url}}">
-                            {{bookmark.title}}
-                        </a>
-                            <span ng-if="bookmark.note" class="text-muted" ng-bind="bookmark.note" />
-                        </li>
-                    </ul>-->
-                </dd>
-            </ng-repeat>
-        </dl>
-    </div>
+                        {{bookmark.title}}
+                    </a>
+                        <span ng-if="bookmark.note" class="text-muted" ng-bind="bookmark.note" />
+                    </li>
+                </ul>-->
+            </dd>
+        </ng-repeat>
+    </dl>
+</div>
 
 
-
-</ng-switch>

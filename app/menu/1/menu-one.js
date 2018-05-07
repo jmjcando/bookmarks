@@ -3,8 +3,8 @@
 
     "use strict";
 
-    var ME = "app-menu";
-    var COMPONENT = 'appMenu';
+    var ME = "app-menu-one";
+    var COMPONENT = 'appMenuOne';
 
     var extend = angular.extend,
         forEach = angular.forEach;
