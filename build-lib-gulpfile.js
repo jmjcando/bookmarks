@@ -39,7 +39,7 @@ gulp.task('jquery', function () {
 
 gulp.task('angular', function () {
 
-    var src = ['', '-mocks', '-route'].map(function (value) {
+    var src = ['', '-mocks', '-route', "-resource"].map(function (value) {
         return base_src + '/angular' + value + '/angular*';
     }),
 	dst = base_dst + '/angular'
