@@ -25,18 +25,20 @@
   
   - Run on root folder (that's how it is served by github), so all relative paths are tested well.
   
-  - _lite-server_ is preferred. It is a wrapper on browser-sync. More suitable for angular. angular.io uses it.
+  - _lite-server_ is preferred (But, sometime browser does not get open, and needs to open up manually. It uses browser-sync. Browser-sync injects js scripts in html, so be mindful). It is a wrapper on browser-sync. 
+  More suitable for angular. angular.io uses it.
   Watches for file and refreshes itself.
   It is installed locally and included as scripts in package.json, so can be used like  ```npm run web```.
-  bs-config.json is config file for browser-sync. sometime browser is not getting opened, that manually open browser.
+  bs-config.json is config file for browser-sync. 
 
   - _http-server_ (installed via npm) to run on local machine (development) on command-line.     ```http-server```.
   
   - Any other web-server is also just fine such as IIS or IIS express (included with Visual studio).
 
-- **bower**: is used to update client packages.  Using files directly from *bower_components* and then include/exclude from VS project and git seems to be more errorprone and seems not clean.  So, now using gulp *bower-to-lib-gulp.js* to copy needed files from *bower_components* to *lib* folder.  
-``` gulp --gulpfile bower-to-lib-gulp.js  ```
-~~Only needed files are included into got (source control), using .gitignore.~~
+- **Npm:** used instead of bower for builing lib folder. (vendor files).  ``` gulp --gulpfile build-lib-gulpfile.js  ```~~
+~~**bower**: is used to update client packages.  Using files directly from *bower_components* and then include/exclude from VS project and git seems to be more errorprone and seems not clean.  So, now using gulp *bower-to-lib-gulp.js* to copy needed files from *bower_components* to *lib* folder.  
+``` gulp --gulpfile bower-to-lib-gulp.js  ```~~
+~~Only needed files are included into git (source control), using .gitignore.~~
 
 - **issues:** refer to [github repository](https://github.com/jmjcando/bookmarks/issues)
 

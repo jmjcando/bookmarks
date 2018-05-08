@@ -1,7 +1,8 @@
 {
-  "browser": "Google Chrome" ,
-  "zzz-browser": [ "\"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\"", "Google Chrome", "firefox" ],
+  "zzz-browser": "Google Chrome" ,
+  "browser": [ "\"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\"", "Google Chrome", "firefox" ],
   "files": [ "./app/**/*" ],
   "https": false,
-  "open":  true
+  "open": true,
+  "verbose":  true
 }

@@ -1,10 +1,10 @@
 ﻿
 var gulp = require('gulp'),
-    gutil = require("gulp-util"),
-    gdebug = require("gulp-debug")
+    util = require("gulp-util"),
+    debug = require("gulp-debug")
 ;
 
-var base_src = './bower_components',
+var base_src = './node_modules',
     base_dst = './lib'
 ;
 
@@ -14,36 +14,45 @@ gulp.task('bootstrap', function () {
 		dst = base_dst + '/bootstrap'
 	;
 
-	gulp.src(src)
-	  .pipe(gulp.dest(dst))
+    gulp
+        .src(src)
+        .pipe(debug({ title: "boostrap-input" }))
+	    .pipe(gulp.dest(dst))
+        .pipe(debug({ title: "boostrap-output" }))
 });
+
+
 
 gulp.task('jquery', function () {
 	var src = base_src + '/jquery/dist/**',
 		dst = base_dst + '/jquery'
 	;
 
-	gulp.src(src)
-	  .pipe(gulp.dest(dst))
+    gulp
+        .src(src)
+        .pipe(debug({ title: "jquery-input" }))
+        .pipe(gulp.dest(dst))
+        .pipe(debug({ title: "jquery-output" }))
 });
+
 
 
 gulp.task('angular', function () {
 
-	var src = []
+    var src = ['', '-mocks', '-route'].map(function (value) {
+        return base_src + '/angular' + value + '/angular*';
+    }),
 	dst = base_dst + '/angular'
 	;
 
-	['', '-mocks', '-route'].forEach(function (value) {
-		src.push(base_src + '/angular' + value + '/angular*');
-	});
 
-	gulp
+    gulp
         .src(src)
+        .pipe(debug({ title: "angular-input" }))
         .pipe(gulp.dest(dst))
-        .pipe(gdebug())
-        //.pipe(gdebug({ title: 'src' }))
+        .pipe(debug({ title: "angular-output" }))
 });
+
 
 
 // // // gulp.task('ui-bootstrap', function () {
