@@ -9,21 +9,22 @@
         .component(ME_snakeCase, {
             templateUrl: ["appFilePathConst", function (appFilePathConst) { return appFilePathConst[ME]; }],
             bindings: {},
-            controller: fn
+            controller: app_container_ctrl
         });
 
 
     ///////////////////////////
-    fn.$inject = ["$log", "appDataService"];
-    function fn($log, appDataService) {
+    app_container_ctrl.$inject = ["$log", "appDataService"];
+    function app_container_ctrl($log, appDataService) {
 
         var ctrl = this;
 
         angular.extend(ctrl, {
-            version: appDataService.version,
-            folders: appDataService.data,
-            folderRows: appDataService.dataRows
-            
+
+            "getVersion": function () { return appDataService.version; },
+            "getFolders": function () { return appDataService.data; },
+            "getFolderRows": function () { return appDataService.dataRows; }
+
         });
 
         $log.log(ME, ctrl);

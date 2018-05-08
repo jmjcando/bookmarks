@@ -15,7 +15,6 @@
             templateUrl: ["appFilePathConst", function (appFilePathConst) { return appFilePathConst[ME]; }],
             bindings: {
                 folders: '<',
-                folderRows: '<'
             },
             controller: fn
         });
