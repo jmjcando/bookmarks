@@ -17,24 +17,25 @@
             bindings: {
                 folders: '<'
             },
-            controller: fn
+            controller: app_menu_ctrl
         });
 
 
     //***************************************************
-    fn.$inject = ["$log"];
-    function fn($log) {
+    app_menu_ctrl.$inject = ["$log"];
+    function app_menu_ctrl($log) {
 
         var ctrl = this;
 
         extend(ctrl, {
 
-            $onInit: onInit,
-            $onChanges: onChanges
+            "$onInit": onInit,
+            "$onChanges": onChanges
         });
 
         return;
         /////////////////
+
 
         /////////////////
         function onInit(){

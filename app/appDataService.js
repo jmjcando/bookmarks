@@ -10,47 +10,49 @@
 
 
     ////////////////////////////////////////////////////
-    appDataService.$inject = ['$location', '$log',  "appDataConst", 'appMockDataConst'];
-    function appDataService($location, $log,  appDataConst, appMockDataConst) {
+    appDataService.$inject = ["$log",  "appDataConst", 'appMockDataConst'];
+    function appDataService($log,  appDataConst, appMockDataConst) {
 
         var service = this;
         
-        var searchObj  = $location.search() || {};
-        searchObj.version = searchObj.version || 'three'; 
-        searchObj.data = searchObj.data || ''; 
-        $log.log (ME, 'searchObj', searchObj);
-
-        var isMockData  = /mock/i.test(searchObj.data);
-
-        var data = getData();
-        var dataRows = getDataRows(data);
-
         angular.extend (service, {
-            version: searchObj.version,
-            data: data,
-            dataRows: dataRows,
+
+            getData: getData,
+            getDataRows: getDataRows,
         });
 
         return service;
         /////////////
 
+
+
         //********************
-        function getData() {
-            var _d = isMockData ? appMockDataConst: appDataConst;
-            var data = angular.copy(_d);
+        function getData(options) {
+
+            options = options || {};
+            var data = options.mock ? appMockDataConst: appDataConst;
+            //var data = angular.copy(_d);
             fixData(data);
+
+            $log.log(ME, 'getData', data.length);
             return data;
         }
 
 
         //********************
-        function getDataRows(data, columns) {
-            columns = columns || 6;
-            var rows = [];
+        function getDataRows(data, options) {
+
+            options = options || {};
+
+            var columns = options.columns || 6,
+                rows = []
+                ;
+
             for (var i = 0; i < data.length; i = i + columns) {
                 rows.push(data.slice(i, i + columns));
             }
 
+            $log.log(ME, 'getDataRows', rows.length);
             return rows;
         }
 

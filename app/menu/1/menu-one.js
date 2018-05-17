@@ -29,12 +29,13 @@
 
         extend(ctrl, {
 
-            $onInit: onInit,
-            $onChanges: onChanges
+            "$onInit": onInit,
+            "$onChanges": onChanges
         });
 
         return;
         /////////////////
+
 
         /////////////////
         function onInit(){

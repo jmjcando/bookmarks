@@ -26,6 +26,9 @@
         var ctrl = this;
 
         extend(ctrl, {
+
+            "$onInit": onInit,
+            "$onChanges": onChanges,
             openMultiUrls: openMultiUrls
         });
 
@@ -38,6 +41,17 @@
             angular.forEach(urls, function (value, key) {
                 $window.open(value, 'win' + key); // ok in FF, notok chrome
             });
+        }
+
+
+        /////////////////
+        function onInit() {
+            $log.log(ME, 'onInit');
+        }
+
+        /////////////////
+        function onChanges(changes) {
+            $log.log(ME, 'onChanges', changes);
         }
 
     }

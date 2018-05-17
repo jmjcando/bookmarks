@@ -1,22 +1,21 @@
 
 <ng-switch on="$ctrl.getVersion()">
 
-    <app-menu-one ng-switch-when="one" folders="$ctrl.getFolders()"></app-menu-one>
+    <app-menu-one ng-switch-when="one" folders="$ctrl.folders"></app-menu-one>
 
-    <app-menu ng-switch-default folders="$ctrl.getFolders()"></app-menu>
+    <app-menu ng-switch-default folders="$ctrl.folders"></app-menu>
 
 </ng-switch>
 
 
 <ng-switch on="$ctrl.getVersion()">
 
-    <app-content-one ng-switch-when="one" folders="$ctrl.getFolders()"></app-content-one>
+    <app-content-one ng-switch-when="one" folders="$ctrl.folders"></app-content-one>
 
-    <app-content-two ng-switch-when="two" folders="$ctrl.getFolderRows()"></app-content-two>
+    <app-content-two ng-switch-when="two" folders="$ctrl.folderRows"></app-content-two>
 
-    <app-content ng-switch-default folders="$ctrl.getFolders()"></app-content>
+    <app-content ng-switch-default folders="$ctrl.folders"></app-content>
 
 </ng-switch>
 
 
-<p>Version:<span ng-bind="$ctrl.getVersion()"></span></p>
