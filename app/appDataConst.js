@@ -172,20 +172,34 @@
                     { "title": "chrome - offline install INFO", "url": "https://support.google.com/chrome/answer/126299?hl=en" },
                 ]
         },
-        {
-            "title": "Tech / angularjs",
+
+            {
+            "title": "Tech/angularjs",
             "bkmrks":
                 [
                     { "title": 'Google JavaScript Style Guide', "url": 'https://google.github.io/styleguide/javascriptguide.xml' },
-                    { "title": 'angularjs - changelog', "url": 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md' },
-                    { "title": 'angularjs - Migrating a newer version', "url": 'https://docs.angularjs.org/guide/migration' },
-                    { "title": 'angularjs - all versions', "url": 'https://code.angularjs.org/' },
-                    { "title": 'angularjs - version support', "url": "https://code.angularjs.org/snapshot/docs/misc/version-support-status" },
-                    { "title": 'angularjs - Long term support', "url": "https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c" }
+                    { "title": 'changelog', "url": 'https://github.com/angular/angular.js/blob/master/CHANGELOG.md' },
+                    { "title": 'Migrating a newer version', "url": 'https://docs.angularjs.org/guide/migration' },
+                    { "title": 'all versions', "url": 'https://code.angularjs.org/' },
+                    { "title": 'version support', "url": "https://code.angularjs.org/snapshot/docs/misc/version-support-status" },
+                    { "title": 'Long term support', "url": "https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c" }
                 ],
         },
-        {
-            "title": "Tech / Kendo - Telerik",
+
+            {
+                "title": "Tech/.NET",
+                "bkmrks": [
+                    { "title": ".NET SDKs for Visual Studio", "url": "https://www.microsoft.com/net/download/visual-studio-sdks" },
+                    { "title": "windows downloads", "url": "https://www.microsoft.com/net/download/Windows/build" },
+                    { "title": ".net blogs", "url": "https://blogs.msdn.microsoft.com/dotnet/" },
+
+
+                ],
+            },
+
+
+            {
+            "title": "Tech/Kendo - Telerik",
             "bkmrks":
                 [
                     { "title": 'charts - overview', "url": 'http://docs.telerik.com/kendo-ui/controls/charts/overview' },
@@ -194,8 +208,10 @@
                     { "title": "grid - examples", "url": "https://demos.telerik.com/kendo-ui/grid" },
                     { "title": "grid - api", "url": "https://docs.telerik.com/kendo-ui/api/javascript/ui/grid#configuration" },
                 ],
-        },
-        {
+            },
+        
+
+            {
             "title": "Tech / Web",
             "bkmrks": [
                 { "title": 'JavaScript / w3 schools', "url": 'https://www.w3schools.com/js/' },
