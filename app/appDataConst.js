@@ -19,10 +19,10 @@
                 { "title": "Facebook", "url": "http://www.facebook.com" },
                 { "title": "LinkedIn", "url": "http://www.linkedin.com/" },
                 {
-                    "type": 'separator'
+                    "type": "separator"
                 }, {
                     "title": "logouts-all"
-                    , "type": 'multi-urls',
+                    , "type": "multi-urls",
                     "urls": [
                         "http://mail.google.com/mail/?logout"
                         , "http://login.yahoo.com/config/login?logout"
@@ -50,7 +50,7 @@
                 { "title": "divya bhaskar - navalkatha", "url": "http://www.divyabhaskar.co.in/literature/navalkatha/" },
                 { "title": "divya bhaskar - navlika", "url": "http://www.divyabhaskar.co.in/literature/navlika/" },
                 { "title": "ReadGujarati", "url": "http://www.readgujarati.com" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "rediff", "url": "http://www.rediff.com/index.html" },
                 { "title": "times of india", "url": "http://timesofindia.indiatimes.com/" },
                 { "title": "economic times", "url": "http://economictimes.indiatimes.com/" },
@@ -63,7 +63,7 @@
                 { "title": "accuW-Today", "url": "http://www.accuweather.com/us/nj/piscataway/08854/city-weather-forecast.asp" },
                 { "title": "accuW-5 day", "url": "http://www.accuweather.com/us/nj/piscataway/08854/forecast.asp" },
                 { "title": "weather-bing", "url": "http://www.bing.com/weather/search?q=weather" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": 'huffpost', "url": "huffingtonpost.com" },
                 { "title": "mycentraljersey", "url": "mycentraljersey.com" },
                 { "title": "NJ.com", "url": "www.nj.com/news/" },
@@ -77,7 +77,7 @@
                 [
                     { "title": "BoA", "url": "http://www.bankofamerica.com" },
                     { "title": "PNC", "url": "https://www.pncbank.com" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "Eftps", "url": "https://www.eftps.com" },
                     { "title": "NJ tax", "url": "https://www1.state.nj.us/TYTR_BusinessFilings/jsp/common/Login.jsp?taxcode=45" },
                 ]
@@ -88,7 +88,7 @@
                 [
                     { "title": "TD", "url": "https://onlinebanking.tdbank.com/" },
                     { "title": "Genisys", "url": "https://www.genisyscu.org/" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "Ally", "url": "https://secure.ally.com/" },
                     { "title": "Amex", "url": "http://personalsavings.americanexpress.com" },
                     { "title": "Discover", "url": "https://www.discover.com/online-banking" },
@@ -101,7 +101,7 @@
                 [
                     { "title": "BofA", "url": "https://www.bankofamerica.com/" },
                     { "title": "Citi", "url": "https://www.citibank.com/us/cards/index.jsp" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "fdlt", "url": "https://fidelity.com" },
                     { "title": "ms", "url": "https://www.morganstanleyclientserv.com/" },
                     { "title": "TR", "url": "https://troweprice.com" },
@@ -124,10 +124,10 @@
                     { "title": "Jayesh bookmarks @ github", "url": "http://jmjcando.github.io/bookmarks/jmj.htm" },
                     { "title": "Mahesh bookmarks @ github", "url": "http://jmjcando.github.io/bookmarks" },
                     { "title": "JmjCanDo Userpage @ github", "url": "http://jmjcando.github.io" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "JmjCanDo @ github", "url": "https://github.com/jmjcando" },
                     { "title": "JmjCanDo @ visualstudio", "url": "http://jmjcando.visualstudio.com" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "comuv Jayesh", "url": "http://jayeshmj.comuv.com/jmj.htm" },
                     { "title": "comuv Mahesh", "url": "http://jayeshmj.comuv.com" },
                     { "title": "000webhost login", "url": "http://members.000webhost.com/login.php", note: "zh3d94snqj@snkmail.com then file manager" },
@@ -143,10 +143,10 @@
                     { "title": "ibc Data: MMF comp", "url": "http://www.ibcdata.com/mfs/toppers.htm" },
                     { "title": "Bankrate: MMF-NonTaxable", "url": "http://www.bankrate.com/brm/rate/mmmf_nontax.asp?prodtype=invest" },
                     { "title": "Bankrate: MMF-Taxables", "url": "http://www.bankrate.com/brm/rate/mmmf_tax.asp?prodtype=invest" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     {
                         "title": "rates-all"
-                        , "type": 'multi-urls', "urls":
+                        , "type": "multi-urls", "urls":
                             [
                                 "http://personalsavings.americanexpress.com/?inav=footer_personal_savings"
                                 , "http://www.ally.com/bank/savings/"
@@ -165,7 +165,7 @@
                     { "title": "Video to mp3", "url": "www.vidtomp3.com" },
                     { "title": "Large Files", "url": "transferbigfiles.com" },
                     { "title": "Large Files", "url": "FileXpressit.com" },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                     { "title": "translate: google", "url": "http://translate.google.com/" },
                     { "title": "transliterate: google", "url": "http://www.google.com/transliterate" },
                     { "title": "transliterate: ReadGuj", "url": "http://www.readgujarati.com/gujtyping.php" },
@@ -233,7 +233,7 @@
                     { "title": 'markdown - github', "url": 'https://help.github.com/articles/basic-writing-and-formatting-syntax/' },
                     { "title": 'markdown - Daring Fireball', "url": 'http://daringfireball.net/projects/markdown' },
                     { "title": 'markdown - Visual studio', "url": 'https://www.visualstudio.com/en-us/docs/reference/markdown-guidance' },
-                    { "type": 'separator' },
+                    { "type": "separator" },
                 ],
         }, {
             "title": "Tech / cdn",
@@ -487,28 +487,28 @@
         {
             "title": "Government",
             "bkmrks":
-                [{ "type": 'separator' },
+                [{ "type": "separator" },
                 { "title": "PubRec: Nj state - Tax listings", "url": "https://wwwnet1.state.nj.us/Treasury/Taxation/TYTR_TLSPS_WEB/Taxlistsearch.aspx" },
                 { "title": "PubRec: mycentraljersey-DataUniverse", "url": "http://www.mycentraljersey.com/apps/pbcs.dll/section?category=datauniverse01" },
                 { "title": "PubRec: NJ.com-NJbythenumbers", "url": "http://www.nj.com/news/bythenumbers/" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "NJT (ewr-edison)", "url": "http://www.njtransit.com/sf/sf_servlet.srv?datepicker=10/27/2009&amp;hdnPageAction=TrainSchedulesFrom&amp;selOrigin=107_NEC&amp;selDestination=38_NEC&amp;OriginDescription=Newark+Penn+Station&amp;DestDescription=Edison" },
                 { "title": "NJT (edison-ewr)", "url": "http://www.njtransit.com/sf/sf_servlet.srv?datepicker=10/27/2009&amp;hdnPageAction=TrainSchedulesFrom&amp;selOrigin=38_NEC&amp;selDestination=107_NEC&amp;OriginDescription=Edison&amp;DestDescription=Newark+Penn+Station" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "Port Authority", "url": "http://www.panynj.gov/" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "Mdlsx County: Recycling MCIA ", "url": "http://www.mciauth.com/recycleframe.htm" },
                 { "title": "Mdlsx County: Vocational", "url": "http://www.ssreg.com/middlesexvotech/default.asp?page=Home" },
                 { "title": "Mdlsx County:", "url": "http://co.middlesex.nj.us/index.asp" },
                 { "title": "Mdlsx County: Land Records", "url": "https://mcrecords.co.middlesex.nj.us/records/index.jsp" },
                 { "title": "Mdlsx County: ID Cards", "url": "http://www.co.middlesex.nj.us/countyclerk/idcards.asp" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "NJ Helps", "url": "http://mynjhelps.org/go", note: "All NJ benefits" },
                 { "title": "NJ: MVC: mdlsxLoc", "url": "http://www.state.nj.us/mvc/Location/Middlesex.htm" },
                 { "title": "NJ: Healthcare profile", "url": "http://12.150.185.184/dca/simple_search.jsp", note: "NJ Attorney General office - Div of Consumer Affairs" },
                 { "title": "NJ: State Police - Criminal History Records Checks", "url": "http://www.njsp.org/about/serv_chrc.html" },
                 { "title": "NJ: WebFile - Redirect", "url": "http://www.njwebfile.com/" },
-                { "type": 'separator' },
+                { "type": "separator" },
                 { "title": "psctwy: schools", "url": "http://www.piscatawayschools.org/" },
                 { "title": "psctwy: Public Library", "url": "http://www.piscatawaylibrary.org/" },
                 { "title": "psctwy: Township", "url": "http://www.piscatawaynj.org/government" },
