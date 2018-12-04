@@ -12,7 +12,6 @@
   - https://jmjcando.github.io/bookmarks/jmj.htm#!?version=one  - Jayesh J (old)
   - https://jmjcando.github.io/bookmarks/jmj.htm#!?data=mock  - Jayesh J (mock data, useful for testing)
 
-
 ## Features
 
 - query-string:  
@@ -39,7 +38,9 @@
   
   - Any other web-server is also just fine such as IIS or IIS express (included with Visual studio).
 
-- **Npm:** used instead of bower for builing lib folder. (vendor files).  ``` gulp --gulpfile build-lib-gulpfile.js  ```~~
+- **Npm:** used instead of bower for builing lib folder. (vendor files).  ``` gulp 
+--gulpfile build-lib-gulpfile.js  ```~~
+
 ~~**bower**: is used to update client packages.  Using files directly from *bower_components* and then include/exclude from VS project and git seems to be more errorprone and seems not clean.  So, now using gulp *bower-to-lib-gulp.js* to copy needed files from *bower_components* to *lib* folder.  
 ``` gulp --gulpfile bower-to-lib-gulp.js  ```~~
 ~~Only needed files are included into git (source control), using .gitignore.~~
