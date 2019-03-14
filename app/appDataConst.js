@@ -193,9 +193,12 @@
         {
             "title": "Tech/.NET",
             "bkmrks": [
-                { "title": ".NET SDKs for Visual Studio", "url": "https://www.microsoft.com/net/download/visual-studio-sdks" },
-                { "title": "windows downloads", "url": "https://www.microsoft.com/net/download/Windows/build" },
+                { "title": ".net archives", "url": "https://dotnet.microsoft.com/download/archives" },
+                { "title": ".net SDKs", "url": "https://www.microsoft.com/net/download/visual-studio-sdks" },
+                { "title": ".net downloads", "url": "https://dotnet.microsoft.com/download" },
+                { "title": ".net core support policy", "url": "https://dotnet.microsoft.com/platform/support/policy/dotnet-core" },
                 { "title": ".net blogs", "url": "https://blogs.msdn.microsoft.com/dotnet/" },
+
 
 
             ],
