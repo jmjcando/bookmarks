@@ -5,33 +5,29 @@
     <link rel="shortcut icon" href="app/asset/index.ico" />
 
     <style>
-        body
-        {
-            font-size:16pt;
-            font-family:"Calibri", "Verdana", "sans-serif";
-        }
-        
-        .folder
-        {
-            /*padding-left:1em;*/
-            float:left;
-            width:33%;
+        body {
+            font-size: 16pt;
+            font-family: "Calibri", "Verdana", "sans-serif";
         }
 
-        .folder-header
-        {
+        .folder {
+            /*padding-left:1em;*/
+            float: left;
+            width: 33%;
+        }
+
+        .folder-header {
             font-weight: bold;
-            font-variant:small-caps;
-            font-size:20pt;
+            font-variant: small-caps;
+            font-size: 20pt;
             background-color: khaki;
             /*text-align:center;*/
-        }	
+        }
 
-        ul.folder-body
-        {
-            padding-left:0;
+        ul.folder-body {
+            padding-left: 0;
             list-style-type: none;
-            margin-top:0;
+            margin-top: 0;
             /*
                 height:5em;
             overflow:auto;
@@ -54,11 +50,11 @@
         </ul>
     </div>
 
-   
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript">
-        (window.angular) || (function(){
-            console.log ("angular cdn - NO");
+        (window.angular) || (function () {
+            console.log("angular cdn - NO");
             document.write("<script src=\"lib/angular/angular.min.js\"><\/script>");
         })();
     </script>
@@ -67,8 +63,7 @@
         /* Controllers */
         var app = angular.module("bookmarkApp", []);
 
-        app.controller("bookmarkController", function ($scope)
-        {
+        app.controller("bookmarkController", function ($scope) {
             $scope.folders = [{
                 "name": "Email",
                 "bookmarks": [
@@ -80,87 +75,89 @@
             }, {
                 "name": "Weather",
                 "bookmarks":
-                [
-                    { "name": "Weather - Piscataway", href: "http://weather.yahoo.com/forecast/USNJ0409_f.html" },
-                    { "name": "Weather - Mumbai", href: "http://weather.yahoo.com/forecast/INXX0087_f.html" },
-                    { "name": "World Clock", href: "http://www.timeanddate.com/worldclock/full.html" },
-                ]
+                    [
+                        { "name": "Weather - Piscataway", href: "http://weather.yahoo.com/forecast/USNJ0409_f.html" },
+                        //{ "name": "Weather - Mumbai", href: "http://weather.yahoo.com/forecast/INXX0087_f.html" },
+                        { "name": "World Clock", href: "http://www.timeanddate.com/worldclock/full.html" },
+                    ]
             },
             {
                 "name": "News",
                 "bookmarks":
-                [
-                    { "name": "All Indian Newspapers", href: "http://www.indiapress.info" },
-                    { "name": "Bombay Samachar", href: "http://www.bombaysamachar.com/" },
-                    { "name": "Gujarat Samachar", href: "http://www.gujaratsamachar.com/" },
-                    { "name": "Times Of India", href: "http://www.timesofindia.com/" },
-                ]
+                    [
+                        { "name": "Bombay Samachar", href: "http://www.bombaysamachar.com/" },
+                        { "name": "Gujarat Samachar", href: "http://www.gujaratsamachar.com/" },
+                        { "name": "Akila Daily", href: "http://www.akilaindia.com" },
+                        { "name": "Sandesh", href: "http://www.sandesh.com" },
+                        { "name": "Times Of India", href: "http://www.timesofindia.com/" },
+                        { "name": "All Indian Newspapers", href: "http://www.indiapress.info" },
+                    ]
             },
             {
                 "name": "Investment",
                 "bookmarks":
-                [
-                    { "name": "Integrated Enterprise", href: "http://www.integratedindia.in" },
-                    { "name": "HSBC Mututal funds", href: "http://www.assetmanagement.hsbc.com/in/mutual-funds" },
-                    { "name": "SBI", href: "https://www.onlinesbi.com/" },
-                    { "name": "BSE", href: "http://www.bseindia.com/" },
-                    { "name": "BSE - Gujarati", href: "http://www.gujbseindia.com/" },
-                    { "name": "NSDL", href: "https://nsdl.co.in/downloadables/list-codes.php" },
-                ]
+                    [
+                        { "name": "Integrated Enterprise", href: "http://www.integratedindia.in" },
+                        //{ "name": "HSBC Mututal funds", href: "http://www.assetmanagement.hsbc.com/in/mutual-funds" },
+                        //{ "name": "SBI", href: "https://www.onlinesbi.com/" },
+                        { "name": "BSE", href: "http://www.bseindia.com/" },
+                        { "name": "BSE - Gujarati", href: "http://www.gujbseindia.com/" },
+                        { "name": "NSDL", href: "https://nsdl.co.in/downloadables/list-codes.php" },
+                    ]
             },
             {
                 "name": "Investment",
                 "bookmarks":
-                [
-                    { "name": "Money Control", href: "http://www.moneycontrol.com/" },
-                    { "name": "CAMS", href: "http://www.camsonline.com/default1.html" },
-                    { "name": "HDFC Fund", href: "http://hdfcfund.com/" },
-                    { "name": "IT Dept Of India", href: "http://www.incometaxindia.gov.in/" },
-                ]
+                    [
+                        { "name": "Money Control", href: "http://www.moneycontrol.com/" },
+                        //{ "name": "CAMS", href: "http://www.camsonline.com/default1.html" },
+                        //{ "name": "HDFC Fund", href: "http://hdfcfund.com/" },
+                        { "name": "IT Dept Of India", href: "http://www.incometaxindia.gov.in/" },
+                    ]
             },
             {
                 "name": "Investment",
                 bookmarks:
-                [
-                    { "name": "Bank Of India", href: "http://www.bankofindia.co.in/" },
-                    { "name": "HDFC", href: "https://netbanking.hdfcbank.com/netbanking/" },
-                    { "name": "Shamrao Vithal", href: "http://www.svcbank.com/" },
-                    { "name": "ICICI", href: "http://www.icicibank.com/" },
-                    { "name": "HSBC", href: "http://hsbc.co.in/" },
-                    { "name": "BOB", href: "https://www.bobibanking.com/" },
-                ]
+                    [
+                        //{ "name": "Bank Of India", href: "http://www.bankofindia.co.in/" },
+                        { "name": "HDFC", href: "https://netbanking.hdfcbank.com/netbanking/" },
+                        //{ "name": "Shamrao Vithal", href: "http://www.svcbank.com/" },
+                        { "name": "ICICI", href: "http://www.icicibank.com/" },
+                        //{ "name": "HSBC", href: "http://hsbc.co.in/" },
+                        { "name": "BOB", href: "https://www.bobibanking.com/" },
+                    ]
             },
             {
                 "name": "Cricket",
                 "bookmarks":
-                [
-                    { "name": "hotstar", href: "https://us.hotstar.com"},
-                    { "name":"willow.tv", href: "http://willow.tv/" },
-                    { "name":"espn plus", href: "http://www.espn.com/watch/espnplus" },
-                    // { "name": "willow/hotstar", href: "https://us.hotstar.com/subscribe/sign-in"},
-                    // { "name": "UPBBWT26782@willows.com 50855", href:"" },
-                    { "name": "crictime", href: "http://crictime.com/" },
-                    { "name": "cricinfo", href: "http://www.cricinfo.com/" }
-                ]
+                    [
+                        { "name": "hotstar", href: "https://us.hotstar.com" },
+                        { "name": "willow.tv", href: "http://willow.tv/" },
+                        //{ "name":"espn plus", href: "http://www.espn.com/watch/espnplus" },
+                        // { "name": "willow/hotstar", href: "https://us.hotstar.com/subscribe/sign-in"},
+                        // { "name": "UPBBWT26782@willows.com 50855", href:"" },
+                        //{ "name": "crictime", href: "http://crictime.com/" },
+                        { "name": "cricinfo", href: "http://www.cricinfo.com/" }
+                    ]
             },
-            {
-                "name": "TV",
-                bookmarks:
-                [
-                    { "name": "desihit", href: "http://desihit.net/" },
-                    { "name": "apni comm - Tarak Mehta", href: "http://www.apnicommunity.com/taarak-mehta-ka-ooltah-chashmah/" },
-                    { "name": "desi-tashan - Tarak mehta", href: "http://www.desi-tashan.com/category/tv-serials/sab-tv/taarak-mehta-ka-ooltah-chashmah/" },
-                    { "name": "desi-tashan - Maharan Pratap", href: "http://www.desi-tashan.com/category/tv-serials/sony-tv/bharat-ka-veer-putra-maharana-pratap/" }
-                ]
-            },
+            //{
+            //    "name": "TV",
+            //    bookmarks:
+            //    [
+            //        { "name": "desihit", href: "http://desihit.net/" },
+            //        { "name": "apni comm - Tarak Mehta", href: "http://www.apnicommunity.com/taarak-mehta-ka-ooltah-chashmah/" },
+            //        { "name": "desi-tashan - Tarak mehta", href: "http://www.desi-tashan.com/category/tv-serials/sab-tv/taarak-mehta-ka-ooltah-chashmah/" },
+            //        { "name": "desi-tashan - Maharan Pratap", href: "http://www.desi-tashan.com/category/tv-serials/sony-tv/bharat-ka-veer-putra-maharana-pratap/" }
+            //    ]
+            //},
             {
                 "name": "Gujarati",
                 bookmarks:
-                [
-                    { "name": "Gujnet", href: "http://www.gujnet.net/" },
-                    { "name": "Gujarat Darpan", href: "http://www.gujaratdarpan.com/magazines_inner.htm" },
-                    { "name": "Aarpar", href: "http://www.aarpar.com/" },
-                ]
+                    [
+                        { "name": "Gujnet", href: "http://www.gujnet.net/" },
+                        { "name": "Gujarat Darpan", href: "http://www.gujaratdarpan.com/magazines_inner.htm" },
+                        //{ "name": "Aarpar", href: "http://www.aarpar.com/" },
+                    ]
             }
             ];
         });
