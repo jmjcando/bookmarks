@@ -31,7 +31,7 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "angular": "^1.6.9",
+    "angular": "^1.8.0",
     "angular-mocks": "^1.6.9",
     "angular-resource": "^1.6.9",
     "angular-route": "^1.6.9",
