@@ -48,14 +48,16 @@
         }, {
             "title": "News-India",
             "bkmrks": [
-                { "title": "divya bhaskar - navalkatha", "url": "http://www.divyabhaskar.co.in/literature/navalkatha/" },
-                { "title": "divya bhaskar - navlika", "url": "http://www.divyabhaskar.co.in/literature/navlika/" },
+                { "title": "NewsPremi/SaurabhShah", "url": "https://www.newspremi.com/" },
+                { "title": "OpIndia", "url": "https://www.opindia.com/" },
                 { "title": "ReadGujarati", "url": "http://www.readgujarati.com" },
                 { "type": "separator" },
                 { "title": "rediff", "url": "http://www.rediff.com/index.html" },
                 { "title": "times of india", "url": "http://timesofindia.indiatimes.com/" },
                 { "title": "economic times", "url": "http://economictimes.indiatimes.com/" },
                 { "title": "firstpost", "url": "firstpost.com" },
+                // { "title": "divya bhaskar - navalkatha", "url": "http://www.divyabhaskar.co.in/literature/navalkatha/" },
+                // { "title": "divya bhaskar - navlika", "url": "http://www.divyabhaskar.co.in/literature/navlika/" },
             ]
         }, {
             "title": "News-USA",
