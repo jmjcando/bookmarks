@@ -1,7 +1,7 @@
 
-import { mjjFolder, mjj_Bookmark } from './mjj-folder';
+//import { mjjFolder, mjj_Bookmark } from './mjj-folder';
 
-export const mjjData: mjjFolder[] = [{
+export const mjjData: any[] = [{
   "name": "Email",
   "bookmarks": [
     { "name": "Yahoo! Mail", href: "https://mail.yahoo.com" },
