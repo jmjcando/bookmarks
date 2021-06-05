@@ -19,8 +19,8 @@
                 { "title": "Y!ahoo", "url": "http://mail.yahoo.com/" },
                 { "title": "hotmail", "url": "http://www.hotmail.com/" },
                 { "title": "sneakemail", "url": "https://sneakemail.com/" },
-                { "title": "Facebook", "url": "http://www.facebook.com" },
-                { "title": "LinkedIn", "url": "http://www.linkedin.com/" },
+                { "title": "Facebook", "url": "https://www.facebook.com" },
+                { "title": "LinkedIn", "url": "https://www.linkedin.com/" },
                 {
                     "type": "separator"
                 }, {
@@ -93,7 +93,7 @@
                     { "title": "Genisys", "url": "https://www.genisyscu.org/" },
                     { "type": "separator" },
                     { "title": "Ally", "url": "https://secure.ally.com/" },
-                    { "title": "Amex", "url": "http://personalsavings.americanexpress.com" },
+                    { "title": "Amex", "url": "https://personalsavings.americanexpress.com" },
                     { "title": "Discover", "url": "https://www.discover.com/online-banking" },
                     { "title": "Optum", "url": "https://cdhaccount.optum.com" },
                 ]
@@ -115,8 +115,8 @@
             "bkmrks": [
                 { "title": "At&T", "url": "https://www.attwireless.com" },
                 { "title": "AllVoi", "url": "https://account.allvoi.com" },
-                { "title": "Liberty mutual", "url": "http://www.libertymutual.com" },
-                { "title": "Optimum Online", "url": "http://www.optimum.com/account/" },
+                { "title": "Liberty mutual", "url": "https://www.libertymutual.com" },
+                { "title": "Optimum Online", "url": "https://www.optimum.com/account/" },
                 { "title": "Edison - water", "url": "https://myh2o-le.utilitiesbp.com" }
             ]
         },
@@ -124,9 +124,9 @@
             "title": "HomePage",
             "bkmrks":
                 [
-                    { "title": "Jayesh bookmarks @ github", "url": "http://jmjcando.github.io/bookmarks/jmj.htm" },
-                    { "title": "Mahesh bookmarks @ github", "url": "http://jmjcando.github.io/bookmarks" },
-                    { "title": "JmjCanDo Userpage @ github", "url": "http://jmjcando.github.io" },
+                    { "title": "Jayesh bookmarks @ github", "url": "https://jmjcando.github.io/bookmarks/jmj.htm" },
+                    { "title": "Mahesh bookmarks @ github", "url": "https://jmjcando.github.io/bookmarks" },
+                    { "title": "JmjCanDo Userpage @ github", "url": "https://jmjcando.github.io" },
                     { "type": "separator" },
                     { "title": "JmjCanDo @ github", "url": "https://github.com/jmjcando" },
                     { "title": "JmjCanDo @ Azure devOps", "url": "https://dev.azure.com/jmjcando" },
