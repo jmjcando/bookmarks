@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { mjjData } from '../data/mjj-data';
-import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
+//import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
 
 @Component({
   selector: 'app-mjj',

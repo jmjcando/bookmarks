@@ -1,6 +1,17 @@
 # INTRO
 Efforts to migrate to Angular v12 from AngulaJs
 
+# Links
+bookmarks/mjj 
+bookmarks/jmj
+
+#Milestones
+Jun 5, 2021: mjj component is fully working in dev.
+
+# Notes
+  - mjj_data is any[], type was defined, but later removed for the sake of simplicity.
+
+
 
 # Bookmarks
 
