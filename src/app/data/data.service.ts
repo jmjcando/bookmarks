@@ -5,7 +5,7 @@ import { jmjFolder } from '../data/jmj-folder';
 import { jmjBookmark } from '../data/jmj-bookmark';
 
 import jmj_data from '../../assets/jmj.data.json';
-import { mjjData } from '../data/mjj-data';
+import  mjjData  from '../../assets/data.mjj.json';
 //import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
 
 @Injectable({
