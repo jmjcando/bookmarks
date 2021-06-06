@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { jmjFolder, jmjBookmark } from '../data/jmj-folder';
-
-import jmj_data from '../../assets/jmj.data.json';
+import { DataService } from '../data/data.service';
+import { jmjFolder } from '../data/jmj-folder';
+import { jmjBookmark  } from '../data/jmj-bookmark';
 
 @Component({
   selector: 'app-jmj',
@@ -11,9 +11,11 @@ import jmj_data from '../../assets/jmj.data.json';
 })
 export class JmjComponent implements OnInit {
 
-  data : jmjFolder[] = jmj_data;
+  data : jmjFolder[];
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    this.data = this.dataService.data.jmj;
+  }
 
   ngOnInit(): void {
   }
