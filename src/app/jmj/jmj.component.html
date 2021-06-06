@@ -1,5 +1,3 @@
-<p>jmj works!</p>
-
 <div class="jmj-container">
 
   <div class="zcontainer-fluid app-3-content">
@@ -14,9 +12,7 @@
           <!--    | filter: {type: '!separator'}  -->
 
           <a *ngSwitchCase="'multi-urls'" href="" (click)="openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
-          <a *ngSwitchDefault [href]="bookmark.url">
-            {{bookmark.title}}
-          </a>
+          <a *ngSwitchDefault [href]="bookmark.url">{{bookmark.title}}</a>
           <em><span *ngIf="bookmark.note" class="small text-muted" ng-bind="bookmark.note"></span></em>
         </div>
 
