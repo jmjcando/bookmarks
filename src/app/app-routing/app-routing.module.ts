@@ -7,11 +7,8 @@ import { JmjComponent } from '../jmj/jmj.component';
 const routes: Routes = [
   { path: '', redirectTo: '/mjj', pathMatch: 'full' },
   { path: 'mjj', component: MjjComponent },
-  { path: 'jmj', component: JmjComponent },
-
-
-////  { path: '', redirectTo: '/mjj', pathMatch: 'full' },
-////  { path: 'mjj', component: MjjComponent },
+  { path: 'jmj', component: JmjComponent, data: { id: 'jmj' } },
+  { path: 'mock', component: JmjComponent, data: {id: 'mock'}  }
 ];
 
 @NgModule({
