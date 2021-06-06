@@ -6,10 +6,11 @@ bookmarks/mjj
 bookmarks/jmj
 
 #Milestones
-Jun 5, 2021: mjj component is fully working in dev.
+Jun'21: Migration is almost complete
 
 # Notes
-  - mjj_data is any[], type was defined, but later removed for the sake of simplicity.
+- To Build use, `npm run build` so that it runs postbuild script and copy index.html to 404.html. 
+  If `ng build` is used then file is required to be copied manually.
 
 
 
