@@ -5,7 +5,8 @@ import { MjjComponent } from '../mjj/mjj.component';
 import { JmjComponent } from '../jmj/jmj.component';
 
 const routes: Routes = [
-  { path: '', component: MjjComponent },
+  { path: '', redirectTo: '/mjj', pathMatch: 'full' },
+  { path: 'mjj', component: MjjComponent },
   { path: 'jmj', component: JmjComponent },
 
 
