@@ -1,1 +1,26 @@
 <p>jmj works!</p>
+
+
+
+<div class="zcontainer-fluid app-3-content">
+  <dl class="dl-horizontal">
+    <span *ngFor="let folder of data">
+      <br />
+      <dt id="bk_{{folder.title}}" class="text-danger">
+        {{folder.title}}
+      </dt>
+      <dd>
+        <div *ngFor="let bookmark of folder.bkmrks " [ngSwitch]="bookmark.type" class="col-xs-3">
+          <!--    | filter: {type: '!separator'}  -->
+
+          <a *ngSwitchCase="'multi-urls'" href="" (click)="openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+          <a *ngSwitchDefault [href]="bookmark.url">
+            {{bookmark.title}}
+          </a>
+          <em><span *ngIf="bookmark.note" class="small text-muted" ng-bind="bookmark.note"></span></em>
+        </div>
+        
+      </dd>
+    </span>
+  </dl>
+</div>
