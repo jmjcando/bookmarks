@@ -4,7 +4,7 @@ import { jmjFolder } from '../data/jmj-folder';
 
 import { jmjBookmark } from '../data/jmj-bookmark';
 
-import jmj_data from '../../assets/jmj.data.json';
+import jmjData from '../../assets/data.jmj.json';
 import  mjjData  from '../../assets/data.mjj.json';
 //import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
 
@@ -18,7 +18,7 @@ export class DataService {
 
   constructor() {
     this.data = {
-      jmj: jmj_data,
+      jmj: jmjData,
       mjj: mjjData
     };
   }
