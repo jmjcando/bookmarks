@@ -1,11 +1,11 @@
 <p>jmj works!</p>
 
+<div class="jmj-container">
 
-
-<div class="zcontainer-fluid app-3-content">
-  <dl class="dl-horizontal">
-    <span *ngFor="let folder of data">
-      <br />
+  <div class="zcontainer-fluid app-3-content">
+    <dl class="dl-horizontal">
+      <span *ngFor="let folder of data">
+        <br />
       <dt id="bk_{{folder.title}}" class="text-danger">
         {{folder.title}}
       </dt>
@@ -19,8 +19,9 @@
           </a>
           <em><span *ngIf="bookmark.note" class="small text-muted" ng-bind="bookmark.note"></span></em>
         </div>
-        
+
       </dd>
-    </span>
-  </dl>
+      </span>
+    </dl>
+  </div>
 </div>
