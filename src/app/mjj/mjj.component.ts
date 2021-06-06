@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { mjjData } from '../data/mjj-data';
-//import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
+import { DataService } from '../data/data.service';
 
 @Component({
   selector: 'app-mjj',
@@ -10,9 +9,11 @@ import { mjjData } from '../data/mjj-data';
 })
 export class MjjComponent implements OnInit {
 
-  data = mjjData
+  data:any ;
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    this.data = this.dataService.data.mjj;
+  }
 
   ngOnInit(): void {
   }
