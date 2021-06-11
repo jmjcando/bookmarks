@@ -26,8 +26,17 @@ export class JmjComponent implements OnInit {
   }
 
 
+  // works well in FF. Opens only one url in chrome
   public openMultiUrls(urls?: string[]) {
-    return ;
+    console.log("openMultiUrls", urls);
+
+    urls && urls.forEach((url, index) => {
+      let win:string = `win_${index}`;
+      console.log("url", url, "win", win);
+      window.open(url, win);
+    });
+
+    return false;
   }
 }
 

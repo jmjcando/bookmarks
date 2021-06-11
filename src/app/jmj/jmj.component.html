@@ -10,9 +10,19 @@
           <div *ngFor="let bookmark of folder.bkmrks " [ngSwitch]="bookmark.type" class="col-xs-3">
             <!--    | filter: {type: '!separator'}  -->
 
-            <a *ngSwitchCase="'multi-urls'" href="" (click)="openMultiUrls(bookmark.urls);">{{bookmark.title}}</a>
+            <a *ngSwitchCase="'multi-urls'"
+               href=""
+               (click)="openMultiUrls(bookmark.urls);">
+              {{bookmark.title}}
+            </a>
+
+            
+
             <a *ngSwitchDefault [href]="bookmark.url">{{bookmark.title}}</a>
-            <em><span *ngIf="bookmark.note" class="small text-muted" ng-bind="bookmark.note"></span></em>
+
+            <em *ngIf="bookmark.note" class="small text-muted">
+                {{bookmark.note}}
+            </em>
           </div>
 
         </dd>

@@ -19,13 +19,77 @@ export class DataService {
 
 
   constructor() {
+
     this.data = {
       jmj: jmjData,
       mjj: mjjData,
       mock: mockData
     };
+
+    this.fixData(this.data.jmj);
+    console.log("jmj", this.data.jmj);
+    this.fixData(this.data.mock);
+
   }
 
+
+  private fixData(folders: jmjFolder[]) {
+
+    for (let idx in folders) {
+
+      let bkmrks = folders[idx].bkmrks;
+
+      for (let idx in bkmrks)
+
+        this.fixBookmark(bkmrks[idx]);
+    }
+  }
+
+
+  private fixBookmark(bkmrk: jmjBookmark): void {
+
+
+    switch (bkmrk.type) {
+
+      case 'multi-urls':
+        if (!bkmrk.urls)
+          break;
+
+        for (let idx in bkmrk.urls) {
+          bkmrk.urls[idx] = this.fixUrl(bkmrk.urls[idx] );
+        }
+
+        break;
+
+      case 'separator':
+        break;
+
+      default:
+
+        //fix title
+        if (!bkmrk.title) { 
+          bkmrk.title = bkmrk.url;
+        }
+
+        //fix url
+        bkmrk.url = bkmrk.url && this.fixUrl(bkmrk.url);
+
+        break;
+    }
+
+
+    
+
+    return;
+  }
+
+
+  //**********************************************
+  private fixUrl(url: string | undefined) : string {
+
+    var prefix = (url && !url.match(/^http/i)) ? "http://" : "";
+    return (prefix + url);
+  }
 
 
 }
