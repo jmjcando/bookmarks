@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top app-3-menu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">JayeshMJ Favs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" >
+          Menu<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu app-scrollable-menu">
+          <li>
+            <a *ngFor="let folder in data.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
+              {{folder.title}}
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+

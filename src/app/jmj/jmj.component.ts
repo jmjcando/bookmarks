@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 
-import { DataService } from '../data/data.service';
 import { jmjFolder } from '../data/jmj-folder';
-import { jmjBookmark  } from '../data/jmj-bookmark';
+import { DataService } from '../data/data.service';
+
 
 @Component({
   selector: 'app-jmj',
