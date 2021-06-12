@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { jmjFolder } from '../data/jmj-folder.interface';
-import { jmjBookmark } from '../data/jmj-bookmark.interface';
+import { jmjFolder } from '@app-data/jmj-folder.interface';
+import { jmjBookmark } from '@app-data/jmj-bookmark.interface';
 
-import jmjData from '../../assets/data.jmj.json';
-import mockData from '../../assets/data.mock.json';
-import mjjData from '../../assets/data.mjj.json';
+import jmjData from '@assets/data.jmj.json';
+import mockData from '@assets/data.mock.json';
+import mjjData from '@assets/data.mjj.json';
 
 //import { mjjFolder, mjj_Bookmark } from '../data/mjj-folder';
 

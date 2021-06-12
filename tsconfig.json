@@ -4,6 +4,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@app-data/*": [ "src/app/data/*" ],
+      "@app-jmj/*": [ "src/app/jmj/*" ],
+      "@app-mjj/*": [ "src/app/mjj/*" ],
+      "@assets/*": [ "src/assets/*" ]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,

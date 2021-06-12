@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService } from '../data/data.service';
+import { DataService } from '@app-data/data.service';
 
 @Component({
   selector: 'app-mjj',

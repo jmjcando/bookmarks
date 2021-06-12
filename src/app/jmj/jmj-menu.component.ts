@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { jmjFolder } from '../data/jmj-folder.interface';
+import { jmjFolder } from '@app-data/jmj-folder.interface';
 
-import { DataService } from '../data/data.service';
+import { DataService } from '@app-data/data.service';
 
 
 @Component({

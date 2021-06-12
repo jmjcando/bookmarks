@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { MjjComponent } from '../mjj/mjj.component';
-import { JmjContainerComponent } from '../jmj/jmj-container.component';
-import { JmjDetailComponent } from '../jmj/jmj-detail.component';
+import { MjjComponent } from '@app-mjj/mjj.component';
+import { JmjContainerComponent } from '@app-jmj/jmj-container.component';
+import { JmjDetailComponent } from '@app-jmj/jmj-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/mjj', pathMatch: 'full' },

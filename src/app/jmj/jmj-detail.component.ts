@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 
-import { jmjFolder } from '../data/jmj-folder.interface';
-import { DataService } from '../data/data.service';
+import { jmjFolder } from '@app-data/jmj-folder.interface';
+import { DataService } from '@app-data/data.service';
 
 
 @Component({

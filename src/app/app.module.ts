@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
-import { MjjComponent } from './mjj/mjj.component';
-import { JmjDetailComponent } from './jmj/jmj-detail.component';
-import { JmjMenuComponent } from './jmj/jmj-menu.component';
-import { JmjContainerComponent } from './jmj/jmj-container.component';
+import { MjjComponent } from '@app-mjj/mjj.component';
+import { JmjDetailComponent } from '@app-jmj/jmj-detail.component';
+import { JmjMenuComponent } from '@app-jmj/jmj-menu.component';
+import { JmjContainerComponent } from '@app-jmj/jmj-container.component';
 
 @NgModule({
   declarations: [
