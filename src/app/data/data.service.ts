@@ -27,7 +27,10 @@ export class DataService {
 
     this.fixData(this.data.jmj);
     console.log("jmj", this.data.jmj);
+
+    console.log("mock", "before", this.data.mock);
     this.fixData(this.data.mock);
+    console.log("mock", "after fix", this.data.mock);
 
   }
 
@@ -37,6 +40,8 @@ export class DataService {
     folders.forEach(folder => {
 
       folder.bkmrks.forEach(bkmrk => this.fixBookmark(bkmrk) );
+
+      folder.bkmrks = folder.bkmrks.filter(bkmrk => bkmrk.type != 'separator');
 
     });
 
