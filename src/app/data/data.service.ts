@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { jmjFolder } from '../data/jmj-folder';
-
-import { jmjBookmark } from '../data/jmj-bookmark';
+import { jmjFolder } from '../data/jmj-folder.interface';
+import { jmjBookmark } from '../data/jmj-bookmark.interface';
 
 import jmjData from '../../assets/data.jmj.json';
 import mockData from '../../assets/data.mock.json';

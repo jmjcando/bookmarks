@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 
-import { jmjFolder } from '../data/jmj-folder';
+import { jmjFolder } from '../data/jmj-folder.interface';
 import { DataService } from '../data/data.service';
 
 

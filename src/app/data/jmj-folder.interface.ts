@@ -1,5 +1,5 @@
 
-import { jmjBookmark } from './jmj-bookmark';
+import { jmjBookmark } from './jmj-bookmark.interface';
 
 export interface jmjFolder {
   title: string;
