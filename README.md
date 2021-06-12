@@ -1,18 +1,24 @@
 # Bookmarks 
 Bookmarks for JMJ, MJJ and Mock (for testing)
 
-## Notes
-  
-  
-  - bookmarks/mjj 
-  - bookmarks/jmj
+## URLs
 
-  - `ng serve` from VS commad-line terminal to watch, build and serve.
-  - To deploy/build use, ` npm run build `        so that it also runs postbuild script that copy index.html to 404.html required for deploying on github pages.
+```
+  bookmarks/mjj 
+  bookmarks/jmj
+  bookmarks/mock
+```
+
+## Build / Deploy
+  - Commands can be run from Visual Studio commad-line terminal. (Visual Studio => View => Terminal)
   
-  - If ` ng build ` is used to build then run `copy .\\docs\\index.html .\\docs\\404.html`.
+  - To watch, build and serve, use  `ng serve` from workspace.
+  
+  - To deploy/build use, `npm run build` and not `ng build`.  The NPM command runs postbuild script in addtion to build.  Post-build script copy index.html to 404.html which is required for deploying on github pages.
+  If ` ng build ` is used to build then manually run `copy .\\docs\\index.html .\\docs\\404.html`.
 
   - After build, commit docs/ folder and push it to remote to have it published on Github page.
+
 
 ## Milestones
   - Jun'21: Migration is almost complete
