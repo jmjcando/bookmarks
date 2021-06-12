@@ -34,14 +34,16 @@ export class DataService {
 
   private fixData(folders: jmjFolder[]) {
 
-    for (let idx in folders) {
+    folders.forEach(folder => {
 
-      let bkmrks = folders[idx].bkmrks;
+      folder.bkmrks.forEach(bkmrk => {
 
-      for (let idx in bkmrks)
+        this.fixBookmark(bkmrk);
 
-        this.fixBookmark(bkmrks[idx]);
-    }
+      });
+
+    });
+
   }
 
 
