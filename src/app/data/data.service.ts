@@ -36,11 +36,7 @@ export class DataService {
 
     folders.forEach(folder => {
 
-      folder.bkmrks.forEach(bkmrk => {
-
-        this.fixBookmark(bkmrk);
-
-      });
+      folder.bkmrks.forEach(bkmrk => this.fixBookmark(bkmrk) );
 
     });
 
@@ -49,16 +45,13 @@ export class DataService {
 
   private fixBookmark(bkmrk: jmjBookmark): void {
 
-
     switch (bkmrk.type) {
 
       case 'multi-urls':
-        if (!bkmrk.urls)
-          break;
 
-        for (let idx in bkmrk.urls) {
-          bkmrk.urls[idx] = this.fixUrl(bkmrk.urls[idx] );
-        }
+        let urls = bkmrk.urls;
+
+        urls && urls.forEach(url => url = this.fixUrl(url) );
 
         break;
 
@@ -68,7 +61,7 @@ export class DataService {
       default:
 
         //fix title
-        if (!bkmrk.title) { 
+        if (!bkmrk.title) {
           bkmrk.title = bkmrk.url;
         }
 
@@ -79,14 +72,14 @@ export class DataService {
     }
 
 
-    
+
 
     return;
   }
 
 
   //**********************************************
-  private fixUrl(url: string | undefined) : string {
+  private fixUrl(url: string | undefined): string {
 
     var prefix = (url && !url.match(/^http/i)) ? "http://" : "";
     return (prefix + url);
