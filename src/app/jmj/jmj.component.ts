@@ -26,7 +26,8 @@ export class JmjComponent implements OnInit {
   }
 
 
-  // works well in FF. Opens only one url in chrome
+  //ToDo:
+  // works well in FF. Opens only one url in chrome/edge
   public openMultiUrls(urls?: string[]) {
     console.log("openMultiUrls", urls);
 
@@ -36,7 +37,7 @@ export class JmjComponent implements OnInit {
       window.open(url, win);
     });
 
-    return false;
+    return false; // so as javascipt a href does not invoke click.
   }
 }
 

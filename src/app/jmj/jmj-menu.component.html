@@ -6,12 +6,16 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" >
-          Menu<span class="caret"></span>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Menu
+          <span class="caret"></span>
         </a>
         <ul class="dropdown-menu app-scrollable-menu">
           <li>
-            <a *ngFor="let folder in data.folders" class="bg-success" href="#bk_{{folder.title}}" target="_self">
+            <a *ngFor="let folder of data"
+               class="bg-success"
+               [routerLink]="['/jmj']"
+               fragment="bk_{{folder.title}}">
               {{folder.title}}
             </a>
           </li>
