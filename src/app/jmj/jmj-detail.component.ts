@@ -7,11 +7,11 @@ import { DataService } from '../data/data.service';
 
 
 @Component({
-  selector: 'app-jmj',
-  templateUrl: './jmj.component.html',
-  styleUrls: ['./jmj.component.css']
+  selector: 'app-jmj-detail',
+  templateUrl: './jmj-detail.component.html',
+  styleUrls: ['./jmj-detail.component.css']
 })
-export class JmjComponent implements OnInit {
+export class JmjDetailComponent implements OnInit {
 
   data: jmjFolder[];
   id: string;

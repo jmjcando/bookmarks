@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MjjComponent } from '../mjj/mjj.component';
 import { JmjContainerComponent } from '../jmj/jmj-container.component';
-import { JmjComponent } from '../jmj/jmj.component';
+import { JmjDetailComponent } from '../jmj/jmj-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/mjj', pathMatch: 'full' },
   { path: 'mjj', component: MjjComponent },
   { path: 'jmj', component: JmjContainerComponent, data: { id: 'jmj' } },
-  { path: 'mock', component: JmjComponent, data: { id: 'mock' } }
+  { path: 'mock', component: JmjDetailComponent, data: { id: 'mock' } }
 ];
 
 @NgModule({

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JmjComponent } from './jmj.component';
+import { JmjDetailComponent } from './jmj-detail.component';
 
-describe('JmjComponent', () => {
-  let component: JmjComponent;
-  let fixture: ComponentFixture<JmjComponent>;
+describe('JmjDetailComponent', () => {
+  let component: JmjDetailComponent;
+  let fixture: ComponentFixture<JmjDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ JmjComponent ]
+      declarations: [ JmjDetailComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JmjComponent);
+    fixture = TestBed.createComponent(JmjDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
