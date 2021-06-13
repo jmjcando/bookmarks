@@ -10,17 +10,12 @@ Bookmarks for JMJ, MJJ and Mock (for testing)
 ```
 
 ## Build / Deploy
-  - Commands can be run from Visual Studio commad-line terminal. (Visual Studio => View => Terminal)
-  
-  - To watch, build and serve, use  `ng serve` from workspace.
-  
-  - To deploy/build use, `npm run build` and not `ng build`.  The NPM command runs postbuild script in addtion to build.  Post-build script copy index.html to 404.html which is required for deploying on github pages.
-  If ` ng build ` is used to build then manually run `copy .\\docs\\index.html .\\docs\\404.html`.
-
-  - After build, commit docs/ folder and push it to remote to have it published on Github page.
+  - Source code is moved into bookmarks-source, a private repository.
+  - Build output (docs/ folder) of bookmarks-source will be copied into docs/ folder of this repository.
 
 
 ## Milestones
+  - Jun'21: Bookmarks-source is separated from bookmarks repository.
   - Jun'21: Migration is almost complete
 
 
