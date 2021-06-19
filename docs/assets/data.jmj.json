@@ -277,27 +277,31 @@
     "title": "HomePage",
     "bkmrks": [
       {
-        "title": "Jayesh bookmarks @ github",
-        "url": "https://jmjcando.github.io/bookmarks/jmj.htm"
+        "title": "JMJ bookmarks",
+        "url": "https://jmjcando.github.io/bookmarks/jmj"
       },
       {
-        "title": "Mahesh bookmarks @ github",
+        "title": "MJJ bookmarks",
         "url": "https://jmjcando.github.io/bookmarks"
       },
       {
-        "title": "JmjCanDo Userpage @ github",
+        "title": "Jmj page@github",
         "url": "https://jmjcando.github.io"
       },
       {
         "type": "separator"
       },
       {
-        "title": "JmjCanDo @ github",
+        "title": "Jmj @github",
         "url": "https://github.com/jmjcando"
       },
       {
-        "title": "JmjCanDo @ Azure devOps",
+        "title": "Jmj@Azure-devOps",
         "url": "https://dev.azure.com/jmjcando"
+      },
+      {
+        "title": "Kanban Board - Misc",
+        "url": "https://dev.azure.com/jmjcando/Misc/_boards/board/t/Misc%20Team/Issues"
       },
       {
         "type": "separator"
