@@ -1,154 +1,157 @@
 [
   {
-    "name": "Email",
-    "bookmarks": [
+    "title": "Email",
+    "bkmrks": [
       {
-        "name": "Yahoo! Mail",
-        "href": "https://mail.yahoo.com"
+        "title": "Yahoo! Mail",
+        "url": "https://mail.yahoo.com"
       },
       {
-        "name": "GMail",
-        "href": "https://mail.google.com"
+        "title": "GMail",
+        "url": "https://mail.google.com"
       },
       {
-        "name": "Google drive",
-        "href": "https://drive.google.com"
+        "title": "Google drive",
+        "url": "https://drive.google.com"
       },
       {
-        "name": "Google drive - Nandu",
-        "href": "https://drive.google.com/drive/u/0/folders/11kQ5C4-zq5sGUBFINWCzAQmmL1FBNoJB"
+        "title": "Google drive - Nandu",
+        "url": "https://drive.google.com/drive/u/0/folders/11kQ5C4-zq5sGUBFINWCzAQmmL1FBNoJB"
       },
       {
-        "name": "Google",
-        "href": "http://www.google.com"
+        "title": "Google",
+        "url": "http://www.google.com"
       }
     ]
   },
   {
-    "name": "Weather",
-    "bookmarks": [
+    "title": "Weather",
+    "bkmrks": [
       {
-        "name": "Weather - Piscataway",
-        "href": "http://weather.yahoo.com/forecast/USNJ0409_f.html"
+        "title": "Weather - Piscataway",
+        "url": "http://weather.yahoo.com/forecast/USNJ0409_f.html"
       },
       {
-        "name": "World Clock",
-        "href": "http://www.timeanddate.com/worldclock/full.html"
+        "title": "World Clock",
+        "url": "http://www.timeanddate.com/worldclock/full.html"
       }
     ]
   },
   {
-    "name": "News",
-    "bookmarks": [
+    "title": "News",
+    "bkmrks": [
       {
-        "name": "Bombay Samachar",
-        "href": "http://www.bombaysamachar.com/"
+        "title": "Bombay Samachar",
+        "url": "http://www.bombaysamachar.com/"
       },
       {
-        "name": "Gujarat Samachar",
-        "href": "http://www.gujaratsamachar.com/"
+        "title": "Gujarat Samachar",
+        "url": "http://www.gujaratsamachar.com/"
       },
       {
-        "name": "Akila Daily",
-        "href": "http://www.akilaindia.com"
+        "title": "Akila Daily",
+        "url": "http://www.akilaindia.com"
       },
       {
-        "name": "Financial Express",
-        "href": "http://www.financialexpress.com"
+        "title": "Financial Express",
+        "url": "http://www.financialexpress.com"
       },
       {
-        "name": "Times Of India",
-        "href": "http://www.timesofindia.com/"
+        "title": "Times Of India",
+        "url": "http://www.timesofindia.com/"
       },
       {
-        "name": "All Indian Newspapers",
-        "href": "http://www.indiapress.info"
+        "title": "All Indian Newspapers",
+        "url": "http://www.indiapress.info"
       }
     ]
   },
   {
-    "name": "Investment",
-    "bookmarks": [
+    "title": "Investment",
+    "bkmrks": [
       {
-        "name": "Integrated Enterprise",
-        "href": "http://www.integratedindia.in"
+        "title": "Integrated Enterprise",
+        "url": "http://www.integratedindia.in"
       },
       {
-        "name": "BSE",
-        "href": "http://www.bseindia.com/"
+        "title": "BSE",
+        "url": "http://www.bseindia.com/"
       },
       {
-        "name": "BSE - Gujarati",
-        "href": "http://www.gujbseindia.com/"
+        "title": "BSE - Gujarati",
+        "url": "http://www.gujbseindia.com/"
       },
       {
-        "name": "NSDL-eServices",
-        "href": "https://eservices.nsdl.com"
+        "title": "NSDL-eServices",
+        "url": "https://eservices.nsdl.com"
       }
     ]
   },
   {
-    "name": "Investment",
-    "bookmarks": [
+    "title": "Investment",
+    "bkmrks": [
       {
-        "name": "Money Control",
-        "href": "http://www.moneycontrol.com/"
+        "title": "Money Control",
+        "url": "http://www.moneycontrol.com/"
       },
       {
-        "name": "IT Dept Of India",
-        "href": "http://www.incometaxindia.gov.in/"
+        "title": "IT Dept Of India",
+        "url": "http://www.incometaxindia.gov.in/"
       }
     ]
   },
   {
-    "name": "Investment",
-    "bookmarks": [
+    "title": "Investment",
+    "bkmrks": [
       {
-        "name": "HDFC",
-        "href": "https://netbanking.hdfcbank.com/netbanking/"
+        "title": "HDFC",
+        "url": "https://netbanking.hdfcbank.com/netbanking/"
       },
-    
+
       {
-        "name": "ICICI",
-        "href": "http://www.icicibank.com/"
+        "title": "ICICI",
+        "url": "http://www.icicibank.com/"
       },
       {
-        "name": "BOB",
-        "href": "https://www.bobibanking.com/"
+        "title": "BOB",
+        "url": "https://www.bobibanking.com/"
       }
     ]
   },
   {
-    "name": "Cricket",
-    "bookmarks": [
+    "title": "Cricket",
+    "bkmrks": [
       {
-        "name": "hotstar",
-        "href": "https://us.hotstar.com"
+        "title": "hotstar",
+        "url": "https://us.hotstar.com"
       },
       {
-        "name": "willow.tv",
-        "href": "http://willow.tv/"
+        "title": "willow.tv",
+        "url": "http://willow.tv/"
       },
-      
+
       {
-        "name": "cricinfo",
-        "href": "http://www.cricinfo.com/"
+        "title": "cricinfo",
+        "url": "http://www.cricinfo.com/"
       }
     ]
   },
 
   {
-    "name": "Gujarati",
-    "bookmarks": [
+    "title": "Gujarati",
+    "bkmrks": [
       {
-        "name": "Gujnet",
-        "href": "http://www.gujnet.net/"
+        "title": "Gujnet",
+        "url": "http://www.gujnet.net/"
       },
       {
-        "name": "Gujarat Darpan",
-        "href": "http://www.gujaratdarpan.com/magazines_inner.htm"
+        "title": "Gujarat Darpan",
+        "url": "http://www.gujaratdarpan.com/magazines_inner.htm"
       },
-      { "zzname": "Aarpar", "zzhref": "http://www.aarpar.com/" }
+      {
+        "zzname": "Aarpar",
+        "zzhref": "http://www.aarpar.com/"
+      }
     ]
   }
 ]
