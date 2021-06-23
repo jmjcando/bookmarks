@@ -4,9 +4,11 @@ Bookmarks for JMJ, MJJ and Mock (for testing)
 ## URLs
 
 ```
-  bookmarks/mjj 
-  bookmarks/jmj
-  bookmarks/mock
+  ``
+  MJJ: http://jmjcando.github.io/bookmarks/mjj 
+  JMJ: http://jmjcando.github.io/bookmarks/jmj
+  Mock: http://jmjcando.github.io/bookmarks/mock
+
 ```
 
 ## Build / Deploy
