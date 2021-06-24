@@ -3,16 +3,17 @@
     "title": "Fav-1",
     "bkmrks": [
       {
-        "title": "to-do",
-        "url": "https://to-do.microsoft.com"
+        "title": "Kiran Zoom SS&C",
+        "url": "https://ssctech.zoom.us/j/7528074909"
       },
       {
-        "title": "Sticky-Notes",
-        "url": "https://www.onenote.com/stickynotes#"
+        "title": "Kiran Zoom JCNJ",
+        "url": "https://us02web.zoom.us/j/85769039791?pwd=T0RaTk9xdVo4d2dNOGcrMnUzM09qdz09"
       },
+      
       {
-        "title": "OneNote",
-        "url": "https://www.onenote.com"
+        "title": "Google Meet - Devang",
+        "url": "https://meet.google.com/exg-cpth-avc?authuser=0"
       },
       {
         "title": "Gmail",
@@ -181,7 +182,7 @@
     ]
   },
   {
-    "title": "PJ-1",
+    "title": "PJ-1-BNM",
     "bkmrks": [
       {
         "title": "TD",
@@ -190,6 +191,10 @@
       {
         "title": "Genisys",
         "url": "https://www.genisyscu.org/"
+      },
+      {
+        "title": "PNC",
+        "url": "https://www.pncbank.org/"
       },
       {
         "type": "separator"
