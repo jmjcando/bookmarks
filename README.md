@@ -13,7 +13,7 @@ Bookmarks for JMJ, MJJ and Mock (for testing)
 
 ## Build / Deploy
   - Source code is moved into bookmarks-source, a private repository.
-  - Build output (docs/ folder) of bookmarks-source will be copied into docs/ folder of this repository.
+  - Build output (dist/ folder) of bookmarks-source will be copied into docs/ folder of this repository.
 
 
 ## Milestones
