@@ -10,7 +10,6 @@
         "title": "Kiran Zoom JCNJ",
         "url": "https://us02web.zoom.us/j/85769039791?pwd=T0RaTk9xdVo4d2dNOGcrMnUzM09qdz09"
       },
-      
       {
         "title": "Google Meet - Devang",
         "url": "https://meet.google.com/exg-cpth-avc?authuser=0"
@@ -83,6 +82,29 @@
         "title": "USD INR Bloomberg",
         "url": "http://www.bloomberg.com/quote/USDINR:CUR"
       }
+    ]
+  },
+  {
+    "title": "SS&C",
+    "bkmrks": [
+      {
+        "title": "Myworkday",
+        "url": "https://www.myworkday.com/wday/authgwy/ssctech/login.htmld"
+      },
+      {
+        "title": "Hireright - bg chk",
+        "url": "https://ows01.hireright.com/applicant_center2/mvc_controller?key=7DA8629840E36CE53D8EEF92BC058A55"
+      },
+      {
+        "title": "Benefits",
+        "url": "https://www.ssctech.com/benefits/index.html"
+      },
+      {
+        "title": "Benefit Hub (discounts)",
+        "url": "https://ssctech.benefithub.com"
+      }
+
+      
     ]
   },
   {
@@ -385,15 +407,15 @@
         "type": "separator"
       },
       {
-        "title": "translate: google",
+        "title": "translate @google",
         "url": "http://translate.google.com/"
       },
       {
-        "title": "transliterate: google",
-        "url": "http://www.google.com/transliterate"
+        "title": "input-tool/transliterate @google",
+        "url": "https://www.google.com/inputtools/try/"
       },
       {
-        "title": "transliterate: ReadGuj",
+        "title": "transliterate @ReadGuj",
         "url": "http://www.readgujarati.com/gujtyping.php"
       },
       {
@@ -671,8 +693,12 @@
         "note": "personal firewall (ref by Marko)"
       },
       {
-        "url": "process-Xplorer.com",
-        "note": "sysinternals.com/ntw2k/freeware/procexp.shtml (ref by Marko)"
+        "title": "sysinternals-Home",
+        "url": "https://docs.microsoft.com/en-us/sysinternals/"
+      },
+      {
+        "title": "sysinternals-live",
+        "url": "https://live.sysinternals.com/"
       },
       {
         "url": "RealVNC.com",
