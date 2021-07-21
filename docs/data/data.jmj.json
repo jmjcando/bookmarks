@@ -92,6 +92,14 @@
         "url": "https://www.myworkday.com/wday/authgwy/ssctech/login.htmld"
       },
       {
+        "title": "Service-now",
+        "url": "https://ssctech.service-now.com/sp"
+      },
+      {
+        "title": "desktop cloud",
+        "url": "https://desktop.ssnc.cloud/"
+      },
+      {
         "title": "Hireright - bg chk",
         "url": "https://ows01.hireright.com/applicant_center2/mvc_controller?key=7DA8629840E36CE53D8EEF92BC058A55"
       },
