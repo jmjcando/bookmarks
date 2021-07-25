@@ -1,14 +1,14 @@
 # Bookmarks 
-Bookmarks for JMJ, MJJ and Mock (for testing)
+Bookmarks (binaries) for JMJ, MJJ and Mock (for testing).
+Source-code is in the bookmarks-source, a private repository.
+ Bookmarks data is located at `https://jmjcando.github.io/data/data.<name>.json`.
 
 ## URLs
 
 ```
-  ``
   MJJ: http://jmjcando.github.io/bookmarks/mjj 
   JMJ: http://jmjcando.github.io/bookmarks/jmj
   Mock: http://jmjcando.github.io/bookmarks/mock
-
 ```
 
 ## Build / Deploy
@@ -17,6 +17,7 @@ Bookmarks for JMJ, MJJ and Mock (for testing)
 
 
 ## Milestones
+  - Jul'21: data moved into jmjcando.github.io repo
   - Jun'21: Bookmarks-source is separated from bookmarks repository.
   - Jun'21: Migration is almost complete
 
